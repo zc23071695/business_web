@@ -1,0 +1,19 @@
+{
+  "name": "business_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zc23071695/business_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zc23071695/business_web/issues"
+  },
+  "homepage": "https://github.com/zc23071695/business_web#readme"
+}
