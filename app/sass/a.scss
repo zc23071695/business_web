@@ -1,0 +1,78 @@
+@import 'swiper.scss';
+$bg_color: #2358af;
+$big_width: 200px;
+$min_width: 100px;
+// $width2:200px;
+// h1 {
+//     background-color: $bg_color;
+//     color: #fff;
+// }
+// h2 {
+//     background-color: $bg_color;
+//     color: blue;
+// }
+// .box {
+//     width: 500px;
+//     .box-left {
+//         span {
+//            &:hover {
+//                background-color: #000;
+//            } 
+//         }
+//     }
+// }
+
+// div{
+//     @if $big_width > $min_width {
+//         width: $big_width;
+//     }
+// }
+
+// $name: "aa", "bb";
+// $width: "100px", "200px";
+// @each $i in $name {
+//     div.#{$i} {
+//        width: 100px;
+//        height: 100px; 
+//     }
+// }
+// @each $i in $width {
+//     div {
+//        width: $i;
+//     }
+// }
+
+
+
+
+// .box {
+//     background-color: red;
+//     width: 2000px;
+//     height: 50px;
+//     line-height: 50px;
+//     a {
+//         text-align: center;
+//     }
+// }
+
+
+// .big-box {
+//     @extend .box;
+//     color: red;
+// }
+
+
+
+
+@mixin aa {
+    background-color: rgba($color: #2358af, $alpha: 0.5);
+    color: darken($color: $bg_color, $amount: 10%);
+    &:hover {
+        width: abs(-20)px;
+        color: #2358af;
+        background: lighten($color: $bg_color, $amount: 10%)
+    }
+}
+.bb {   
+    @include aa;
+}
