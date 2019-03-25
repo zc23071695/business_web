@@ -28,7 +28,7 @@ ul li {
 .full .headerTopArea .headerTop {
     width: 1200px;
 }
-
+/* 头部 */
 .vanclHead {
     width: 100%;
     height: auto;
@@ -466,7 +466,7 @@ s, strike, del {
 .vanclOthers ul li.none {
     border-right: none;
 }
-
+/* 尾部 */
 #footArea {
     width: 1200px;
     height: 136px;
@@ -682,4 +682,57 @@ s, strike, del {
 .BayWindow ul li.online a {
     height: 71px;
     background: url(../images/baywindow.png) no-repeat -1px -78px;
+}
+
+/*砸屏广告*/
+
+.screenAdPop {
+        width: 980px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -300px;
+        z-index: 999999;
+        margin-left: -490px;
+        overflow: hidden;
+}
+
+.screenAdPop .screenAdPopfull {
+        display: none;
+}
+
+.screenAdPop .screenAdPopnarrow {
+        display: block;
+}
+
+.screenAdPop a {
+        display: block;
+}
+
+.screenAdPop a img {
+        vertical-align: top;
+}
+
+.screenAdClose {
+        display: block;
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        background: url(../images/closedz01.png) no-repeat left top;
+        width: 29px;
+        height: 29px;
+        cursor: pointer;
+}
+
+.full .screenAdPop {
+        width: 1200px;
+        margin-left: -600px;
+}
+
+.full .screenAdPop .screenAdPopfull {
+        display: block;
+}
+
+.full .screenAdPop .screenAdPopnarrow {
+        display: none;
 }
