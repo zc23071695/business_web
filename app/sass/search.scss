@@ -1,0 +1,98 @@
+@import 'base.scss';
+$gray:#f7f7f7;
+$red:#b81c22;
+.top {
+    // background: red;
+    height: 30px;background: $gray;
+    .t-right{
+        width: 436px;height: 100%;float: right;
+        display: flex;justify-content: space-between;
+    }
+}
+.nav{
+    height: 76px;
+    .container{
+        >div:first-child{
+            // text-indent: -9999px;
+            height: 0;
+        }
+        .logo{
+            height: 100%;
+            display: flex;justify-content: space-between;
+            
+           
+            // div:nth-child(2){float: left}
+            >ul{
+                width: 977px;height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                >li{
+                    // width: 100%;
+                    // text-align: center;
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    div:nth-child(1){
+                        // display: flex;
+                    }
+                    >div:nth-child(2){
+                    //     color:red;
+                        // display: flex;
+                        position: absolute;
+                        // display: none;
+                        ul{
+                            display: none;
+                            margin-left:-30px;
+                            background: white;
+                           >li{
+                            padding: 10px 30px;
+                           }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}
+.selectarea {
+    
+    .container{
+        
+        div:first-child{
+            display: flex;
+            justify-content: space-between;
+        }
+        .items{display: flex;
+            border: 1px solid #C7CACD;height: 36px;align-items:center;
+            ul{
+                display: flex;
+                li{
+                    width: 68px;text-align: center
+                }
+            }
+        }
+    }
+}
+.content-nav{
+    .container{
+        >div:first-child{
+            margin-top: 15px;
+            div:first-child{
+                width: 88px;height: 30px;text-align: center;line-height: 30px;
+                background: $red;color: white;
+            }
+            border-bottom: 3px solid $red;
+        }
+    }
+}
+
+
+
+
+
+
+
+

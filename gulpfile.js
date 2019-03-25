@@ -20,7 +20,7 @@ gulp.task('allFile', function () {
 })
 
 gulp.task('watch', function () {
-    gulp.watch(['app/**/*', '!app/sass/**/*'], ['allFile']);
+    gulp.watch(['app/**/*'], ['allFile']);
     gulp.watch('app/sass/**/*.scss', ['sass']);
 
 })
@@ -28,14 +28,14 @@ gulp.task('server', function () {
     connect.server({
         root: 'dist', //设置根目录
         livereload: true, // 是否热更新
-        port: 7733
+        port: 7780
     });
 })
 
 
 
-gulp.task('default', function () {
-    // 将你的默认的任务代码放在这
+gulp.task('default', ['allFile', 'server', 'watch', 'sass'], function () {
+
 });
 
 gulp.task('mod', function () {
