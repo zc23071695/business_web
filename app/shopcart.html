@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shopCart.css">
+</head>
+
+<body class="mycart">
+    <div id="wrapper">
+        <div id="header" class="clearfix">
+            <a class="logo" href="http://www.vancl.com/" title="凡客诚品" target="_blank">
+                <img alt="凡客诚品" src="http://i2.vanclimg.com/cms/20140829/vancl-logo.png">
+            </a>
+            <div class="help-center">
+                <a href="http://help.vancl.com/" target="_blank">帮助中心</a>
+            </div>
+            <div class="account">
+                <p>您好，欢迎光临凡客诚品。<a class="login"
+                        href="https://login.vancl.com/login/login.aspx?http://shopping.vancl.com/mycart">登录</a>|<a
+                        class="reg" href="https://login.vancl.com/login/reg.aspx">注册</a></p>
+
+            </div>
+        </div>
+        <div id="location">
+
+
+            <em>1.我的购物车</em> <span>2.填写核对信息单</span> <span>3.成功提交订单</span>
+
+        </div>
+        <div id="content">
+
+
+
+
+            <div id="cart-gift">
+
+
+                <div class="cart-top">
+                    <!-- 2015.07.31 shopping改版 -->
+
+                    <h2>
+                        我的购物车</h2>
+                </div>
+                <div class="tip">
+                    <span>温馨提示：</span>1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。
+                </div>
+                <div id="cart">
+                </div>
+                <div id="cart-product" class="clearfix" data-jobs-alert="False" data-promotion="False">
+                    <div id="batchdelcart">
+                        <table cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="title-white bd-left">
+                                        &nbsp;
+                                    </th>
+                                    <th class="bar-title ">
+                                        <input id="all-ckb-top" type="checkbox" class="track all-products-ckb ckb"
+                                            name="all-products" value="all-products" data-del-tip=""><label
+                                            for="all-ckb-top">全选</label>
+                                    </th>
+                                    <th class="image">
+                                        &nbsp;
+                                    </th>
+                                    <th class="name"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                        商品名称 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                                    </th>
+                                    <th class="size">
+                                        &nbsp; &nbsp;尺寸&nbsp; &nbsp; 
+                                    </th>
+                                    
+                                    <th class="price">
+                                        &nbsp; &nbsp; &nbsp; &nbsp;单价 &nbsp; &nbsp;  &nbsp; &nbsp; 
+                                    </th>
+                                    <th class="qty">
+                                        &nbsp; &nbsp;  数量 &nbsp; &nbsp;
+                                    </th>
+                                    <th class="discount">
+                                        &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp;    优惠 &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; 
+                                    </th>
+                                    <th class="subtotal">
+                                        &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp;  小计 &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; 
+                                    </th>
+                                    <th class="operate ">
+                                        &nbsp; &nbsp;  &nbsp; &nbsp;    操作 &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; 
+                                    </th>
+                                    <th class="title-white bd-right">
+                                        &nbsp;
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="vancl-title" style="display:none">
+                                <tr>
+                                    <td class="white bd-left">
+                                        &nbsp;
+                                    </td>
+                                    <td colspan="9" class="vancl-title-bottom">
+                                        <p class="vancl-title-left">
+                                            <input id="vancl-ckb-top" type="checkbox" name="vancl-products"
+                                                value="shippers">
+                                            以下商品由凡客诚品负责配送
+                                        </p>
+                                        <div class="vancl-title-right pos-r">
+                                            <p>
+                                                您再买<span id="transfer-tip">￥<em>101.00</em></span>即可享免运费，
+                                                <a href="/mycart/collocate" data="101.00" id="collocate"
+                                                    class="collocate-btn track" name="sp_cart_mycar_collocate">
+                                                    立即凑单</a>
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="white bd-right">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody style="display:none">
+                                <tr>
+                                    <td class="white bd-left">
+                                        &nbsp;
+                                    </td>
+                                    <td colspan="9">
+                                        <p class="shop-name-left">
+                                            <input id="vancl-ckb-shop-10258" type="checkbox" name="products-shop"
+                                                value="products-shop" shopid="10258" issupplier="False">
+                                            店铺：
+                                            <a href="http://mall.vancl.com/10258/" target="_blank">VANCL 凡客诚品旗舰店</a>
+                                        </p>
+                                    </td>
+                                    <td class="white bd-right">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody id="vancl-general-product" name="vancl-general-product">
+                            </tbody>
+                            <tbody id="supplier-general-product_tb" name="supplier-general-product_tb">
+                                <tr>
+                                    <td class="white bd-left bd-bottom">
+                                        &nbsp;
+                                    </td>
+                                    <td class="bar bd-bottom" rowspan="1" colspan="6">
+                                    </td>
+                                    <td class="bd-bottom">
+                                    </td>
+                                    <td class="subtotal bd-bottom">
+                                    </td>
+                                    <td class="operate bd-bottom">
+                                    </td>
+                                    <td class="white bd-right bd-bottom">
+                                    </td>
+                                </tr>
+                                <tr class="selected">
+                                    <td class="white bd-left">
+                                        &nbsp;
+                                    </td>
+                                    <td class="bar" rowspan="1">
+                                        <input type="checkbox" class="track ckb" name="p-item" data-del-tip="" value=""
+                                            checked="checked" issupplier="False" shopid="10258"
+                                            selectedclothescode="15803939">
+                                    </td>
+                                    <td class="image" rowspan="1">
+                                        <a target="_blank" href="http://item.vancl.com/6384226.html?ref=mycart_ref">
+                                            <img alt="T恤 山鸟叔 A4 白色"
+                                                src="https://ssl.vanclimg.com/48/product/6/3/8/6384226/big/6384226-1j201902261005466162.jpg"></a>
+                                    </td>
+                                    <td class="name">
+                                        <a target="_blank" href="http://item.vancl.com/6384226.html?ref=mycart_ref"
+                                            title="T恤 山鸟叔 A4 白色">
+                                            T恤 山鸟叔 A4 白色
+                                        </a>
+                                        <div style="float: right; width: 36%">
+                                        </div>
+                                    </td>
+                                    <td class="size">
+                                        <a target="_blank" title="L">
+                                            L
+                                        </a>
+                                    </td>
+                                    <td class="price">
+                                        ￥98.00
+                                    </td>
+                                    <td class="qty">
+                                        <form class="modify-qty" action="/mycart/updateqty" method="get">
+                                            <a class="track decrease-disable" name="sp_cart_mycart_decrease">减少</a>
+                                            <input name="qty" type="text" class="modify-product-qty" value="1"
+                                                maxlength="3">
+                                            <noscript>
+                                                <input type="submit" class="nojs-btn" value="修改" /></noscript>
+                                            <a class="increase track" href="/mycart/updateqty?sku=15803939&amp;qty=2"
+                                                name="sp_cart_mycart_increase">增加</a>
+                                            <input name="product-qty" type="hidden" value="1">
+                                            <input name="product-code" type="hidden" value="6384226">
+                                            <input name="sku" type="hidden" value="15803939">
+                                            <input name="ispoint" type="hidden" value="False">
+                                        </form>
+                                    </td>
+                                    <td>
+                                        -
+                                    </td>
+                                    <td class="subtotal">
+                                        ￥98.00
+                                    </td>
+                                    <td class="operate">
+                                        <a class="del track" name="sp_cart_mycart_del"
+                                            href="/mycart/deleteitem?sku=15803939">
+                                            删除</a>
+                                    </td>
+                                    <td class="white bd-right">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
+                            <tbody id="vancl-point-product" name="vancl-point-product">
+
+                            </tbody>
+                            <tbody id="vancl-present-product" name="vancl-present-product">
+
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="white bd-left table-bottom table-bottom-td">
+                                        &nbsp;
+                                    </td>
+                                    <td colspan="9" class="table-bottom table-bottom-td">
+                                        &nbsp;
+                                    </td>
+                                    <td class="white bd-right table-bottom table-bottom-td">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="bar-empty clearfix">
+                        </div>
+                        <div id="bar-summary" class="bar-summary clearfix" style="top: -91px;">
+                            <div class="bar">
+                                <input id="all-ckb-bt" type="checkbox" name="all-products" value="all-products"
+                                    class="track all-products-ckb ckb" data-del-tip=""><label
+                                    for="all-ckb-bt">全选</label>
+                                <a href="javascript:;" class="batch-del-cart track" name="sp_cart_mycar_batch_clear">
+                                    删除</a>
+                                <span>数量总计：<em>1</em>件</span>
+                                <span>
+                                    <em>
+                                    </em>
+                                </span>
+                            </div>
+                            <div class="summary">
+
+                                产品金额总计(不含运费)：<span class="amount">￥<em>98.00</em></span>
+
+                            </div>
+                            <div class="btn-panel">
+                                <a href="/mycart/continuetobuy" class="go-buy track" name="sp_cart_mycar_goBuy">
+                                    &lt;&lt;继续购物</a> <a class="checkout track" href="/checkout?previousUserId=-1"
+                                    id="sp_cart_mycar_goPay" name="sp_cart_mycar_goPay">
+                                    去结算&gt;&gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="/collocate.ashx?p=hitshowcount" style="display: none">
+            </div>
+            <div id="cart-collocate" style="top: 158px; left: 256px;">
+                <div class="coudan-title" style="display: none;">
+                    <h2><strong>免运费凑单商品</strong>（您再买<span id="coudan-differ"></span>凡客发货商品，即可享免运费优惠）</h2>
+                    <a href="javascript:;" class="close"><img
+                            src="https://ssl.vanclimg.com/Others/2011/2/15/dpbox_06.gif"></a>
+                </div>
+                <div id="collocate-list" class="product-list-panel  coudan-content  clearfix clearfixCD"
+                    style="display: none;">
+                </div>
+            </div>
+
+            <div id="remove-product" style="display: none;">
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="6">
+                                您删除的商品，您可以 <span>重新购买</span> 或 <span>放入收藏夹</span>。
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div id="gift" data-present-url="/mycart/presents">
+
+
+            </div>
+            <div id="recom-browse-collect" class="cuxiao" style="display:none">
+                <ul class="tab">
+                    <li class="selected"><a href="/mycart/recent" class="track" name="sp_cart_recent">最近浏览商品</a></li>
+                    <li><a href="/mycart/recommended" class="track" name="sp_cart_recommended">推荐商品</a></li>
+                    <li><a href="/mycart/favorites" class="track" name="sp_cart_favorites">收藏夹</a></li>
+                </ul>
+                <div id="recent-browse" class="product-list-panel clearfix" style="display: block;">
+                </div>
+                <div id="tj-product" class="product-list-panel clearfix" style="display: none;">
+                </div>
+                <div id="favorite" class="product-list-panel clearfix" style="display: none;">
+                </div>
+            </div>
+
+            <img src="/ocx.ashx?buynow=" style="display:none">
+
+            <!-- <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>    
+            <script src="js/shopcart.js"></script>
+            <script>
+            shopCar.init('#cart-product');
+            </script> -->
+
+        </div>
+        <!-- <div id="cart-empty">
+    您的购物车中没有商品，请您先 <a href="http://www.vancl.com">选购商品»</a></div>
+
+</div> -->
+        <!-- <div class="main">
+      
+    商品名称:<span class="shop-name">牙膏</span><br />
+    数量: <input class="shop-count" type="number" value="1" /><br />
+    价格: <span class="shop-price">25</span><br />
+    商品总价: <span class="shop-total">25</span>
+    商品提示: <span class="shop-tip"></span>
+    <button class="btn shop-btn-del">删除</button>
+
+</div>
+<script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>    
+<script src="js/shopcart.js"></script>
+<script>
+shopCar.init('.main');
+</script> -->
+
+
+
+
+    </div>
+    <div id="footer">
+        <p class="copyrights">Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号
+            出版物经营许可证新出发京批字第直110138号</p>
+        <p class="certs">
+            <a class="ectrustprc" title="中国电子商务诚信单位" href="http://www.ectrustprc.org.cn/seal/splash/1000020.htm"
+                target="_blank">
+                <img alt="中国电子商务诚信单位" src="images/cert-redlogo.gif">
+            </a>
+            <span class="costumeorg" title="中国服装协会会员单位">
+                <img alt="中国服装协会会员单位" src="images/cert-costumeorg.gif">
+            </span>
+            <a class="online315" href="http://www.315online.com.cn/member/315090053.html" title="网上交易保障中心"
+                target="_blank">
+                <img alt="网上交易保障中心" src="images/cert-wsjybzzx.gif">
+            </a>
+        </p>
+    </div>
+    </div>
+</body>
+
+</html>

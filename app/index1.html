@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+        <link rel="stylesheet" href="css/index.css">
+
+</head>
+<style>
+        .swiper-container {
+                margin: 0 auto;
+                width: 1200px;
+                height: 535px;
+        }
+</style>
+
+<body class="full">
+        <div id="Head" class="vanclHead">
+                <div id="headerTopArea" class="headerTopAreaBox">
+                        <div class="headerTopArea">
+                                <div class="headerTop">
+                                        <div class="headerTopRight" style="width: 126px;">
+                                                <div class="active notice" id="vanclCustomer"><a class="mapDropTitle"
+                                                                href="//catalog.vancl.com/zhuanti/tg_20100510.html"
+                                                                target="_blank">网站公告</a></div>
+                                                <div class="payattention"><em></em><a href="javascript:void(0);"
+                                                                class="vweixinbox"><span class="vweixin"
+                                                                        style="background: url(http://i1.vanclimg.com/cms/20150605/w1.jpg) no-repeat left 3px;"></span><b
+                                                                        class="vweixinTip"></b></a><a
+                                                                href="//e.weibo.com/vancl" class="track vanclweibo"
+                                                                name="hp-hp-head-weibo-v:n" target="_blank"
+                                                                style="background: url(images//w2.jpg) no-repeat left 3px;"></a>
+                                                </div>
+                                        </div>
+                                        <div class="headerTopLeft">
+                                                <div class="loginArea">
+                                                        您好,<span class="top">欢迎光临凡客诚品！ </span>
+                                                        <span>
+                                                                <a href="">登录</a>&nbsp;|&nbsp;<a href="">注册</a>
+                                                        </span>
+                                                </div>
+                                                <div class="recommendArea">
+                                                        <a href="">我的订单</a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!--顶部通栏广告位-->
+        <div id="logoArea" class="vanclLogoSearch">
+                <div class="vanclSearch fr">
+                        <div class="searchTab">
+                                <div class="search fl"><input type="text" class="searchText ac_input textBox Enter fl"
+                                                name="k" id="skey" value="搜“运动户外”，体验与众不同" defaultkey="运动户外"
+                                                autocomplete="off">
+                                                <ul class="show"></ul>
+                                                
+                                                <input type="button" class="searchBtn sousuoBtn btn"
+                                                id="btnHeaderSearch" onfocus="this.blur()">
+                                        </div>
+                                <div class="active" id="shoppingCarNone">
+                                        <p><a id="shoppingcar_link" rel="nofollow" href="shopcart.html"
+                                                        name="hp-hp-head-cart-v:n:t"
+                                                        class="shopborder track cartab">购物车(<span
+                                                                car_product_total="shoppingCar_product_totalcount">0</span>)</a><s></s>
+                                        </p>
+                                        <div class="bottomlines"></div>
+                                        <div class="BuycarTab shopDropList">
+                                                <div class="shopnopru">
+                                                        <div class="SCtotalpageno">您的购物车中没有任何商品</div>
+                                                        <div class="SCtotalpageBottom"></div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <script src="js/jsonp.js"></script>
+                        <script src="js/search.js"></script>
+                        <div class="hotWord">
+                                <p> 热门搜索：<a name="hp-hp-classhotsearch-1_1-v:n" class="track"
+                                                href="//s.vancl.com/search?k=%E5%85%8D%E7%83%AB%E8%A1%AC%E8%A1%AB&amp;orig=3"
+                                                target="_blank">免烫衬衫</a><a name="hp-hp-classhotsearch-1_2-v:n"
+                                                class="track"
+                                                href="//s.vancl.com/search?k=%E7%BE%BD%E7%BB%92%E6%9C%8D&amp;orig=3"
+                                                target="_blank">羽绒服</a><a name="hp-hp-classhotsearch-1_3-v:n"
+                                                class="track"
+                                                href="//s.vancl.com/s2.html?k=%E5%A4%96%E5%A5%97#ref=s_order_0_2|s_order_0_5|s_order_0_1|s_order_0_2|s_order_0_10|s_order_0_1"
+                                                target="_blank">外套</a><a name="hp-hp-classhotsearch-1_4-v:n"
+                                                class="track"
+                                                href="//s.vancl.com/search?k=%E7%86%8A%E6%9C%AC%E7%86%8A&amp;orig=3"
+                                                target="_blank">熊本熊</a><a name="hp-hp-classhotsearch-1_5-v:n"
+                                                class="track"
+                                                href="//s.vancl.com/search?k=%E8%BF%90%E5%8A%A8%E6%88%B7%E5%A4%96&amp;orig=3"
+                                                target="_blank">运动户外</a><a name="hp-hp-classhotsearch-1_6-v:n"
+                                                class="track"
+                                                href="//s.vancl.com/search?k=%E5%B8%86%E5%B8%83%E9%9E%8B&amp;orig=3"
+                                                target="_blank">帆布鞋</a><a name="hp-hp-classhotsearch-1_7-v:n"
+                                                class="track"
+                                                href="//s.vancl.com/search?k=%E6%B0%B4%E6%9F%94%E6%A3%89&amp;orig=3"
+                                                target="_blank">水柔棉</a></p>
+                        </div>
+                </div>
+        </div>
+
+        <div class="navlist clear" id="mainNavBox" style="z-index:300!important;">
+                <ul>
+                        <li class="vancllogo_Con" style="text-align: left;"><a href="//www.vancl.com"></a></li>
+                        <li><a href="//www.vancl.com">首页</a><span class="NavLine"></span></li>
+                        <li><a href="//shirts.vancl.com/" class="track" name="hp-hp-head-nav_1-v:n"
+                                        target="_blank">衬衫<em
+                                                style="display:block;width:25px; height:13px; background:url(http://i3.vanclimg.com/cms/20170329/icon_hot.png) no-repeat scroll; position:absolute;left:67px;top:-5px;"></em></a><span
+                                        class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                        <ul>
+                                                <li><a href="//s.vancl.com/search?k=%E5%85%8D%E7%83%AB&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_1-1-v:n"
+                                                                target="_blank">免烫</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E6%98%93%E6%89%93%E7%90%86&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_1-2-v:n"
+                                                                target="_blank">易打理</a></li>
+                                                <li><a href="//s.vancl.com/27531-27532-s1.html?k=%E4%BC%91%E9%97%B2%E8%A1%AC%E8%A1%AB"
+                                                                class="track" name="hp-hp-head-nav_1-3-v:n"
+                                                                target="_blank">休闲</a></li>
+                                                <li><a href="//catalog.vancl.com/shirts/gzcs.html" class="track"
+                                                                name="hp-hp-head-nav_1-4-v:n" target="_blank">高支</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/search?k=%E6%B3%95%E5%85%B0%E7%BB%92&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_1-5-v:n"
+                                                                target="_blank">法兰绒</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E7%89%9B%E6%B4%A5%E7%BA%BA%E8%A1%AC%E8%A1%AB&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_1-6-v:n"
+                                                                target="_blank">牛津纺</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E9%9D%92%E5%B9%B4%E5%B8%83%E8%A1%AC%E8%A1%AB&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_1-7-v:n"
+                                                                target="_blank">青年布</a></li>
+                                                <li><a href="//s.vancl.com/27531-27532-s1.html?k=%e7%89%9b%e4%bb%94%e8%a1%ac%e8%a1%ab"
+                                                                class="track" name="hp-hp-head-nav_1-8-v:n"
+                                                                target="_blank">牛仔</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E9%BA%BB%E8%A1%AC%E8%A1%AB&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_1-9-v:n"
+                                                                target="_blank">麻</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E6%B0%B4%E6%B4%97%E6%A3%89%E8%A1%AC%E8%A1%AB&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_1-10-v:n"
+                                                                target="_blank">水洗棉</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E6%B3%A1%E6%B3%A1%E7%BA%B1&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_1-11-v:n"
+                                                                target="_blank">泡泡纱</a></li>
+                                        </ul>
+                                </div>
+                        </li>
+
+                        <li><a href="//vt.vancl.com" class="track" name="hp-hp-head-nav_2-v:n" target="_blank">T恤<em
+                                                style="display:block;width:25px; height:13px; background:url(http://i5.vanclimg.com/cms/20170308/new_0308.png) no-repeat scroll; position:absolute;left:62px;top:-5px;"></em></a><span
+                                        class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                        <ul>
+                                                <li><a href="//s.vancl.com/27531-s1.html?k=%E6%9C%AC%E5%B9%BF"
+                                                                class="track" name="hp-hp-head-nav_2-1-v:n"
+                                                                target="_blank">本广</a></li>
+                                                <li><a href="//s.vancl.com/27531-s1.html?k=%E6%9D%8E%E7%BF%94%E4%BC%9F"
+                                                                class="track" name="hp-hp-head-nav_2-2-v:n"
+                                                                target="_blank">李翔伟</a></li>
+                                                <li><a href="//s.vancl.com/27531-s1.html?k=%E5%BC%A0%E5%B9%BF%E5%85%88"
+                                                                class="track" name="hp-hp-head-nav_2-3-v:n"
+                                                                target="_blank">张广先</a></li>
+                                                <li><a href="//s.vancl.com/27531-s1.html?k=%E8%8D%AF" class="track"
+                                                                name="hp-hp-head-nav_2-4-v:n" target="_blank">药</a></li>
+                                                <li><a href="//s.vancl.com/27531-s1.html?k=%E9%95%BF%E5%9C%BA%E9%9B%84"
+                                                                class="track" name="hp-hp-head-nav_2-5-v:n"
+                                                                target="_blank">长场雄</a></li>
+                                                <li><a href="//s.vancl.com/27531-s1.html?k=%E5%88%9B%E5%8F%AF%E8%B4%B4"
+                                                                class="track" name="hp-hp-head-nav_2-6-v:n"
+                                                                target="_blank">创可贴</a></li>
+                                                <li><a href="//s.vancl.com/27531-s1.html?k=%E5%91%A8%E5%8D%97"
+                                                                name="hp-hp-head-nav_2-7-v:n" target="_blank">周南</a>
+                                                </li>
+                                                <li><a href="//catalog.vancl.com/sjsvt.html" class="track"
+                                                                name="hp-hp-head-nav_2-8-v:n" target="_blank">山鸟叔</a>
+                                                </li>
+                                                <li><a href="//catalog.vancl.com/txjyzt.html" class="track"
+                                                                name="hp-hp-head-nav_2-9-v:n" target="_blank">简鱼</a>
+                                                </li>
+                                                <li><a href="//catalog.vancl.com/oufeihong.html" class="track"
+                                                                name="hp-hp-head-nav_2-10-v:n" target="_blank">欧飞鸿</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/search?k=%E5%A5%BD%E5%B0%8F%E7%8C%AA&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_2-11-v:n"
+                                                                target="_blank">好小猪</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E5%89%AA%E7%BA%B8%E7%8C%AA&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_2-12-v:n"
+                                                                target="_blank">剪纸猪</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E8%B5%B5%E8%80%81%E5%B8%88%E7%9A%84%E7%8C%AA&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_2-13-v:n"
+                                                                target="_blank">赵老师的猪</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E7%86%8A%E6%9C%AC%E7%86%8AT%E6%81%A4&amp;orig=3"
+                                                                name="hp-hp-head-nav_2-14-v:n" target="_blank">熊本熊</a>
+                                                </li>
+                                                <li><a href="//catalog.vancl.com/srmzzt.html"
+                                                                name="hp-hp-head-nav_2-15-v:n" target="_blank">水柔棉T</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/search?k=%E8%BF%90%E5%8A%A8T%E6%81%A4&amp;orig=3"
+                                                                name="hp-hp-head-nav_2-16-v:n" target="_blank">运动T恤</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/p1.html?k=polo"
+                                                                name="hp-hp-head-nav_2-17-v:n" target="_blank">POLO</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li><a href="//catalog.vancl.com/xbxx.html" class="track" name="hp-hp-head-nav_4-v:n"
+                                        target="_blank">卫衣</a><span class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                        <ul>
+                                                <li><a href="//s.vancl.com/search?k=%E7%86%8A%E6%9C%AC%E7%86%8A%E5%8D%AB%E8%A1%A3&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_4-1-v:n"
+                                                                target="_blank">熊本熊</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E5%BC%80%E8%A1%AB%E5%8D%AB%E8%A1%A3&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_4-2-v:n"
+                                                                target="_blank">开衫</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E8%BF%9E%E5%B8%BD%E5%8D%AB%E8%A1%A3&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_4-3-v:n"
+                                                                target="_blank">连帽</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E5%8D%AB%E8%A1%A3%20%E5%9C%86%E9%A2%86&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_4-4-v:n"
+                                                                target="_blank">圆领</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E6%B0%B4%E6%9F%94%E6%A3%89%E5%8D%AB%E8%A1%A3&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_4-5-v:n"
+                                                                target="_blank">水柔棉</a></li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li><a href="//coats.vancl.com/" class="track" name="hp-hp-head-nav_5-v:n"
+                                        target="_blank">外套</a><span class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                        <ul>
+                                                <li><a href="//catalog.vancl.com/sportydbx.html" class="track"
+                                                                name="hp-hp-head-nav_5-1-v:n" target="_blank">运动户外</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/search?k=%E7%9A%AE%E8%82%A4&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_5-2-v:n"
+                                                                target="_blank">皮肤衣</a></li>
+                                                <li><a href="//s.vancl.com/27531-27532-s1.html?k=%E8%A5%BF%E6%9C%8D"
+                                                                class="track" name="hp-hp-head-nav_5-3-v:n"
+                                                                target="_blank">西服</a></li>
+                                                <li><a href="//catalog.vancl.com/hbx.html" class="track"
+                                                                name="hp-hp-head-nav_5-4-v:n" target="_blank">C9设计款</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/27549-27553-s1.html?k=%E5%A4%B9%E5%85%8B"
+                                                                class="track" name="hp-hp-head-nav_5-5-v:n"
+                                                                target="_blank">夹克</a></li>
+                                                <li><a href="//s.vancl.com/search?k=nautilus&amp;orig=3" class="track"
+                                                                name="hp-hp-head-nav_5-6-v:n"
+                                                                target="_blank">nautilus</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E5%A4%A7%E8%A1%A3&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_5-7-v:n"
+                                                                target="_blank">大衣</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E7%BE%BD%E7%BB%92%E6%9C%8D&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_5-8-v:n"
+                                                                target="_blank">羽绒服</a></li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li><a href="//zhenzhishan.vancl.com/" class="track" name="hp-hp-head-nav_6-v:n"
+                                        target="_blank">针织衫</a><span class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                        <ul>
+                                                <li><a href="//s.vancl.com/search?k=%E7%A9%BA%E8%B0%83%E8%A1%AB&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_6-1-v:n"
+                                                                target="_blank">空调衫</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E6%A3%89%E7%BA%BF%E8%A1%AB&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_6-2-v:n"
+                                                                target="_blank">棉线衫</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E7%BE%8A%E6%AF%9B%E9%92%88%E7%BB%87%E8%A1%AB&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_6-3-v:n"
+                                                                target="_blank">羊毛衫</a></li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li><a href="//xiuxianku.vancl.com/" class="track" name="hp-hp-head-nav_7-v:n"
+                                        target="_blank">裤装</a><span class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                        <ul>
+                                                <li><a href="//s.vancl.com/search?k=%E9%92%88%E7%BB%87%E8%A3%A4&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_7-2-v:n"
+                                                                target="_blank">针织裤</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E4%BC%91%E9%97%B2%E8%A3%A4&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_7-1-v:n"
+                                                                target="_blank">休闲裤</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E7%89%9B%E4%BB%94%E8%A3%A4&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_7-3-v:n"
+                                                                target="_blank">牛仔裤</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E8%BF%90%E5%8A%A8%E8%A3%A4&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_7-4-v:n"
+                                                                target="_blank">运动裤</a></li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li><a href="//fanbuxie.vancl.com/" class="track" name="hp-hp-head-nav_8-v:n"
+                                        target="_blank">鞋</a><span class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                        <ul>
+                                                <li><a href="//s.vancl.com/search?k=%E5%A4%8D%E5%8F%A4%E8%B7%91&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_8-1-v:n"
+                                                                target="_blank">复古跑鞋</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E5%B8%86%E5%B8%83%E9%9E%8B&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_8-2-v:n"
+                                                                target="_blank">帆布鞋</a></li>
+                                                <li><a href="//s.vancl.com/27540-s1.html?k=%E4%BC%91%E9%97%B2%E9%9E%8B"
+                                                                class="track" name="hp-hp-head-nav_8-3-v:n"
+                                                                target="_blank">休闲鞋</a></li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li class="none"><a href="//home.vancl.com/" class="track" name="hp-hp-head-nav_9-v:n"
+                                        target="_blank">家居配饰</a><span class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                        <ul>
+                                                <li><a href="//s.vancl.com/search?k=%E6%89%8B%E6%9C%BA%E5%A3%B3&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_9-1-v:n"
+                                                                target="_blank">手机壳</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E4%BB%B6%E5%A5%97&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_9-2-v:n"
+                                                                target="_blank">床品套件</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E8%A2%AB%E5%AD%90&amp;orig=3"
+                                                                name="hp-hp-head-nav_9-3-v:n" target="_blank">被子</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/search?k=%E6%9E%95&amp;orig=3" class="track"
+                                                                name="hp-hp-head-nav_9-4-v:n" target="_blank">枕</a></li>
+                                                <li><a href="//s.vancl.com/p1.html?k=%BC%D2%BE%D3%B7%FE" class="track"
+                                                                name="hp-hp-head-nav_9-5-v:n" target="_blank">家居服</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/28262.html?k=%E5%AE%B6%E5%B1%85%E9%9E%8B"
+                                                                class="track" name="hp-hp-head-nav_9-6-v:n"
+                                                                target="_blank">家居鞋</a></li>
+                                                <li><a href="//s.vancl.com/search?k=%E5%8C%85&amp;orig=3" class="track"
+                                                                name="hp-hp-head-nav_9-7-v:n" target="_blank">背提包</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/search?k=%E6%8B%89%E6%9D%86%E7%AE%B1&amp;orig=3"
+                                                                class="track" name="hp-hp-head-nav_9-8-v:n"
+                                                                target="_blank">拉杆箱</a></li>
+                                                <li><a href="//catalog.vancl.com/pdqb.html" class="track"
+                                                                name="hp-hp-head-nav_9-9-v:n" target="_blank">皮带钱包</a>
+                                                </li>
+                                                <li><a href="//s.vancl.com/27911.html?k=%e5%b8%bd%e5%ad%90"
+                                                                class="track" name="hp-hp-head-nav_9-10-v:n"
+                                                                target="_blank">帽子</a></li>
+                                                <li><a href="//s.vancl.com/27541-s1.html?k=%E6%AF%9B%E5%B7%BE"
+                                                                class="track" name="hp-hp-head-nav_9-11-v:n"
+                                                                target="_blank">毛巾</a></li>
+                                                <li><a href="//mianwa.vancl.com/" class="track"
+                                                                name="hp-hp-head-nav_9-12-v:n" target="_blank">内衣袜品</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </li>
+                        <li><a href="//catalog.vancl.com/sdzjhd.html" class="track" name="hp-hp-head-nav_3-v:n"
+                                        target="_blank">特惠</a><span class="NavLine"></span>
+                                <div class="subNav"><span></span>
+                                </div>
+                        </li>
+                </ul>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+
+                $(".navlist ul li").hover(
+                        function () {
+                                $('.subNav', this).stop().slideDown(200);
+                        },
+                        function () {
+                                $('.subNav', this).stop().slideUp(200);
+                        }
+                );
+        </script>
+        <div id="content" class="vanclContent vanclCon">
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                                <div class="swiper-slide"><img src="images/新品上市VT 买三免一.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/535_19.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/zjsj535_1.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/1200x535_2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/1919_535.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/cs535.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="images/x535.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!--左箭头-->
+                        <div class="swiper-button-next"></div>
+                        <!--右箭头-->
+
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+                <script>
+                        var mySwiper = new Swiper('.swiper-container', {
+                                autoplay: true,//可选选项，自动滑动
+                                loop: true,
+                                effect: 'fade',
+                                fadeEffect: {
+                                        crossFade: true,
+                                },
+                                pagination: {
+                                        el: '.swiper-pagination',
+                                },
+                                navigation: {
+                                        nextEl: '.swiper-button-next',
+                                        prevEl: '.swiper-button-prev',
+                                },
+                        })
+                </script>
+                <div class="getMoney">
+                        <div class="getMoney">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                        <tbody>
+                                                <tr>
+                                                        <td colspan="9"><a href="http://cz.vancl.com/DepositPre.aspx"
+                                                                        target="_blank"><img src="images/充100返100.jpg"
+                                                                                alt="充100返100" width="1200" height="62"
+                                                                                border="0"></a></td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+                </div>
+                <div class="blank0"></div>
+                <div class="proAreabox clearFix">
+                        <br>
+
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                        <tr>
+                                                <td colspan="9">
+                                                        <img src="http://i4.vanclimg.com/cms/20190128/xhsm_g.jpg" alt=""
+                                                                width="1200" height="84" usemap="#Map8" border="0"></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                        <tr>
+                                                <td>
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_02.jpg"
+                                                                width="22" height="424" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6384665.html" target="_blank"><img
+                                                                        src="http://i4.vanclimg.com/cms/20190315/xpg_03.jpg"
+                                                                        width="268" height="424" alt="T恤 山鸟叔 鸟类学6"></a>
+                                                </td>
+                                                <td>
+                                                        <img src="http://i1.vanclimg.com/cms/20190228/sy0228g_04.jpg"
+                                                                width="27" height="424" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6384452.html" target="_blank"><img
+                                                                        src="http://i4.vanclimg.com/cms/20190315/xpg_05.jpg"
+                                                                        width="268" height="424" alt="T恤 本广 平头白发"></a>
+                                                </td>
+                                                <td>
+                                                        <img src="http://i1.vanclimg.com/cms/20190228/sy0228g_04.jpg"
+                                                                width="27" height="424" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6380951.html" target="_blank"><img
+                                                                        src="http://i4.vanclimg.com/cms/20190315/xpg_07.jpg"
+                                                                        width="268" height="424"
+                                                                        alt="T恤 山鸟叔 颜摄 白色 "></a></td>
+                                                <td>
+                                                        <img src="http://i1.vanclimg.com/cms/20190228/sy0228g_04.jpg"
+                                                                width="27" height="424" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6380841.html" target="_blank"><img
+                                                                        src="http://i4.vanclimg.com/cms/20190315/xpg_09.jpg"
+                                                                        width="268" height="424"
+                                                                        alt="T恤 欧飞鸿 英雌 黑色 "></a></td>
+                                                <td>
+                                                        <img src="http://i1.vanclimg.com/cms/20190228/sy0228g_04.jpg"
+                                                                width="27" height="424" alt=""></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                        <tr>
+                                                <td colspan="9">
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_21.jpg"
+                                                                width="1200" height="20" alt=""></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                        <tr>
+                                                <td>
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_02.jpg"
+                                                                width="22" height="428" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6384489.html" target="_blank"><img
+                                                                        src="http://i5.vanclimg.com/cms/20190315/xpg_13.jpg"
+                                                                        width="268" height="427" alt="T恤 李翔伟 消暑 "></a>
+                                                </td>
+                                                <td>
+                                                        <img src="http://i1.vanclimg.com/cms/20190228/sy0228g_18.jpg"
+                                                                width="28" height="428" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6384069.html" target="_blank"><img
+                                                                        src="http://i2.vanclimg.com/cms/20190315/xpg_15.jpg"
+                                                                        width="268" height="427" alt="T恤 剪纸猪 5 白色"></a>
+                                                </td>
+                                                <td>
+                                                        <img src="http://i2.vanclimg.com/cms/20190228/sy0228g_14.jpg"
+                                                                width="27" height="428" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6385295.html" target="_blank"><img
+                                                                        src="http://i2.vanclimg.com/cms/20190315/xpg_17.jpg"
+                                                                        width="268" height="427" alt="T恤 创可贴 赫耳墨斯 "></a>
+                                                </td>
+                                                <td>
+                                                        <img src="http://i2.vanclimg.com/cms/20190228/sy0228g_14.jpg"
+                                                                width="27" height="428" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6385298.html" target="_blank"><img
+                                                                        src="http://i2.vanclimg.com/cms/20190315/xpg_19.jpg"
+                                                                        width="268" height="427" alt="T恤 创可贴 成名曲 "></a>
+                                                </td>
+                                                <td>
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_10.jpg"
+                                                                width="25" height="428" alt=""></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                        <tr>
+                                                <td colspan="9">
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_21.jpg"
+                                                                width="1200" height="20" alt=""></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                        <tr>
+                                                <td>
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_02.jpg"
+                                                                width="22" height="425" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6384240.html" target="_blank"><img
+                                                                        src="http://i1.vanclimg.com/cms/20190315/xpg_23.jpg"
+                                                                        width="268" height="427"
+                                                                        alt="T恤 山鸟叔 国货 白色 "></a></td>
+
+                                                <td>
+                                                        <img src="http://i3.vanclimg.com/cms/20190228/sy0228g_24.jpg"
+                                                                width="27" height="426" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6384332.html" target="_blank"><img
+                                                                        src="http://i1.vanclimg.com/cms/20190315/xpg_25.jpg"
+                                                                        width="268" height="427" alt="T恤 山鸟叔 重庆森林"></a>
+                                                </td>
+                                                <td>
+                                                        <img src="http://i5.vanclimg.com/cms/20190228/sy0228g_26.jpg"
+                                                                width="27" height="426" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6384226.html" target="_blank"><img
+                                                                        src="http://i1.vanclimg.com/cms/20190315/xpg_27.jpg"
+                                                                        width="268" height="427" alt="T恤 山鸟叔 A4"></a>
+                                                </td>
+                                                <td>
+                                                        <img src="http://i2.vanclimg.com/cms/20190228/sy0228g_28.jpg"
+                                                                width="28" height="426" alt=""></td>
+                                                <td><a href="http://item.vancl.com/6384287.html" target="_blank"><img
+                                                                        src="http://i1.vanclimg.com/cms/20190315/xpg_29.jpg"
+                                                                        width="268" height="427" alt="T恤 欧飞鸿 来玩 "></a>
+                                                </td>
+
+                                                <td>
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_10.jpg"
+                                                                width="25" height="425" alt=""></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                        <tr>
+                                                <td colspan="9">
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_11.jpg"
+                                                                width="1200" height="20" alt=""></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                        <tr>
+                                                <td colspan="9">
+                                                        <img src="http://i3.vanclimg.com/cms/20181228/xhsm_21.jpg"
+                                                                width="1200" height="50" alt=""></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+
+
+                        <map name="Map8">
+                                <area shape="rect" coords="976,2,1199,61" href="http://catalog.vancl.com/xptjrk.html"
+                                        target="_blank">
+                        </map>
+                        <div class=" piclist shangzhuanglist shangzhuanglist_top clear">
+                                <h2>优选推荐</h2>
+                                <ul>
+                                        <li class="pic_one"><a href="http://catalog.vancl.com/csz4.html" class="track"
+                                                        name="hp-hp-jpzk-1_1-v:n" target="_blank"> <img
+                                                                src="http://i1.vanclimg.com/cms/20181120/pc01.jpg"
+                                                                alt="4.0日式免烫衬衫" width="590" height="440"></a>
+                                                <h3><span>充值购买更优惠</span>4.0日式免烫衬衫</h3>
+                                        </li>
+                                        <li class="pic_two">
+                                                <div> <a href="http://catalog.vancl.com/njfzt.html" class="track"
+                                                                name="hp-hp-jpzk-2_2-v:n" target="_blank"> <img
+                                                                        src="http://i2.vanclimg.com/cms/20181120/pc02.jpg"
+                                                                        alt="帆布鞋" width="290" height="180"> </a>
+                                                        <h3> <span>充值购买相当于<em>99</em>元</span>牛津纺衬衫</h3>
+                                                </div>
+                                                <div> <a href="http://item.vancl.com/6383118.html" class="track"
+                                                                name="hp-hp-jpzk-2_3-v:n" target="_blank"> <img
+                                                                        src="http://i1.vanclimg.com/cms/20181109/290180.jpg"
+                                                                        alt="潮鞋" width="290" height="180"></a>
+                                                        <h3><span>充值购买更优惠</span>复合双层绒卫衣 </h3>
+                                                </div>
+                                        </li>
+                                        <li class="pic_three" style="margin-right: 0px;"> <a
+                                                        href="http://catalog.vancl.com/zhijiang320.html" class="track"
+                                                        name="hp-hp-jpzk-1_4-v:n" target="_blank"><img
+                                                                src="http://i1.vanclimg.com/cms/20190322/srm.jpg"
+                                                                alt="运动户外" width="286" height="440"></a>
+                                                <h3> <span>充值购买相当于<em>19</em>元</span>全棉舒适素色T</h3>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div class=" piclist shangzhuanglist clear">
+                                <ul>
+                                        <li class="pic_one"><a href="http://catalog.vancl.com/sdzjhd.html" class="track"
+                                                        name="hp-hp-jpzk-2_1-v:n" target="_blank"> <img
+                                                                src="http://i3.vanclimg.com/cms/20190313/th.jpg"
+                                                                alt="凡客牛津纺衬衫" width="590" height="440"></a>
+                                                <h3> <span>充值购买更优惠</span>特惠专区</h3>
+                                        </li>
+                                        <li class="pic_two">
+                                                <div> <a href="http://catalog.vancl.com/xbxx.html" class="track"
+                                                                name="hp-hp-jpzk-1_2-v:n" target="_blank"> <img
+                                                                        src="http://i3.vanclimg.com/cms/20181127/x.jpg"
+                                                                        alt="纳米防污vt" width="290" height="180"> </a>
+                                                        <h3><span>充值购买更优惠</span> 熊本熊卫衣</h3>
+                                                </div>
+                                                <div> <a href="http://zhenzhishan.vancl.com" class="track"
+                                                                name="hp-hp-jpzk-2_2-v:n" target="_blank"> <img
+                                                                        src="http://i5.vanclimg.com/cms/20181127/pc05.jpg"
+                                                                        alt="针织衫" width="290" height="180"> </a>
+                                                        <h3><span>充值购买更优惠</span>针织衫</h3>
+                                                </div>
+                                        </li>
+                                        <li class="pic_three" style="margin-right: 0px;"> <a
+                                                        href="http://catalog.vancl.com/sportydbx.html" class="track"
+                                                        name="hp-hp-jpzk-2_4-v:n" target="_blank"><img
+                                                                src="http://i2.vanclimg.com/cms/20190313/ydwh.jpg"
+                                                                alt="外套" width="286" height="440"></a>
+                                                <h3><span>充值购买更优惠</span>户外运动</h3>
+                                        </li>
+
+                                </ul>
+                        </div>
+                        <div class="piclist kuzhuanglist clear">
+                                <h2> 下装推荐</h2>
+                                <ul>
+                                        <li><a href="http://s.vancl.com/search?k=%E4%BC%91%E9%97%B2%E8%A3%A4&amp;orig=3"
+                                                        class="track" name="hp-hp-xztj-1_1-v:n" target="_blank"> <img
+                                                                src="http://i1.vanclimg.com/cms/20181127/pc01.jpg"
+                                                                alt="凡客牛仔裤" width="285" height="438"></a>
+                                                <h3> <span>充值购买相当于<em>79</em>元起</span>休闲裤 </h3>
+                                        </li>
+                                        <li><a href="http://s.vancl.com/search?k=%E7%89%9B%E4%BB%94%E8%A3%A4&amp;orig=3"
+                                                        class="track" name="hp-hp-xztj-1_2-v:n" target="_blank"> <img
+                                                                src="http://i2.vanclimg.com/cms/20181127/pc02.jpg"
+                                                                alt="针织裤" width="285" height="438"></a>
+                                                <h3> <span>充值购买相当于<em>69</em>元起</span>牛仔裤</h3>
+                                        </li>
+                                        <li><a href="http://item.vancl.com/6378277.html" class="track"
+                                                        name="hp-hp-xztj-1_3-v:n" target="_blank"> <img
+                                                                src="http://i4.vanclimg.com/cms/20181127/pc04.jpg"
+                                                                alt="凡客休闲裤 " width="285" height="438"></a>
+                                                <h3> <span>充值购买相当于<em>79</em>元</span> 收口慢跑休闲裤</h3>
+                                        </li>
+                                        <li style="margin-right: 0px;"><a
+                                                        href="http://s.vancl.com/s2.html?k=%E9%92%88%E7%BB%87%E8%A3%A4"
+                                                        class="track" name="hp-hp-xztj-1_4-v:n" target="_blank"> <img
+                                                                src="http://i3.vanclimg.com/cms/20181127/pc03.jpg"
+                                                                alt="运动户外" width="285" height="438"></a>
+                                                <h3> <span>充值购买相当于<em>39</em>元起</span> 针织裤 </h3>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div class="piclist otherlist clear">
+                                <h2> 更多精品</h2>
+                                <ul>
+                                        <li><a href="http://fanbuxie.vancl.com/" class="track" name="hp-hp-gdjp-1_1-v:n"
+                                                        target="_blank"> <img
+                                                                src="http://i4.vanclimg.com/cms/20181212/pc-fbx.jpg"
+                                                                alt="帆布鞋" width="385" height="275"></a> </li>
+
+                                        <li style="margin-right: 0px;"><a href="http://mianwa.vancl.com" class="track"
+                                                        name="hp-hp-gdjp-1_2-v:n" target="_blank"> <img
+                                                                src="http://i5.vanclimg.com/cms/20181127/pc-wp.jpg"
+                                                                alt="袜品" width="385" height="275"></a> </li>
+                                        <li style="margin-bottom:0px;"><a
+                                                        href="http://s.vancl.com/s1.html?k=%E8%BF%9E%E8%A3%A4%E8%A2%9C"
+                                                        class="track" name="hp-hp-gdjp-1_3-v:n" target="_blank"> <img
+                                                                src="http://i4.vanclimg.com/cms/20190107/wz.jpg"
+                                                                alt="连裤袜" width="385" height="275"></a> </li>
+                                </ul>
+                        </div>
+                        <div class="piclist otherlist clear">
+                                <ul>
+                                        <li style="margin-bottom:0px;"><a href="http://catalog.vancl.com/hyxxb.html"
+                                                        class="track" name="hp-hp-gdjp-1_4-v:n" target="_blank"> <img
+                                                                src="http://i4.vanclimg.com/cms/20181101/pc-xb-01.jpg"
+                                                                alt="箱包" width="385" height="275"></a> </li>
+                                        <li><a href="http://home.vancl.com" class="track" name="hp-hp-gdjp-1_5-v:n"
+                                                        target="_blank"> <img
+                                                                src="http://i1.vanclimg.com/cms/20181127/pc-jj.jpg"
+                                                                alt="家居" width="385" height="275"></a> </li>
+                                        <li style="margin-right: 0px; margin-bottom:0px;"><a
+                                                        href="http://s.vancl.com/search?k=%E5%86%85%E8%A1%A3"
+                                                        class="track" name="hp-hp-gdjp-1_6-v:n" target="_blank"> <img
+                                                                src="http://i2.vanclimg.com/cms/20181101/pc-ny-01.jpg"
+                                                                alt="内衣" width="385" height="275"></a> </li>
+                                </ul>
+                        </div>
+
+                </div>
+                <div class="blank0"></div>
+                <div class="blank0" style="height:32px;"></div>
+        </div>
+
+        <div class="vanclFoot">
+                <div class="vanclCustomer">
+                        <ul>
+                                <li>
+                                        <a href="">
+                                                <p class="onlineCustomer">
+                                                        <img src="images/onlinecustomer.png" alt="">
+                                                </p>
+                                                <p class="onlineTime">7x9小时在线客服</p>
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="">
+                                                <p class="seven">
+                                                        <img src="images/seven.png" alt="">
+                                                </p>
+                                                <p>7天内退货</p>
+                                                <p>购物满199元免运费</p>
+                                        </a>
+                                </li>
+                                <li class="twocode">
+
+                                        <p>
+                                                <img src="images/vanclQRcode.jpg" alt=""
+                                                        style="width:104px;height:104px">
+                                        </p>
+                                        <p>扫描下载<em>凡客</em>客户端</p>
+                                        <p></p>
+
+
+                                </li>
+                        </ul>
+                </div>
+                <div class="vanclOthers publicfooterclear">
+                        <ul>
+                                <li> <a href=""> 关于凡客</a></li>
+                                <li> <a href="">新手指南</a> </li>
+                                <li> <a href="">配送范围及时间</a> </li>
+                                <li> <a href="">支付方式</a> </li>
+                                <li> <a href="">售后服务</a> </li>
+                                <li class="none"><a href="">帮助中心</a> </li>
+                        </ul>
+                </div>
+        </div>
+        <div id="footArea">
+                <div class="footBottom">
+                        <div class="footBottomTab">
+                                <p> Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号
+                                        京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+
+                                <p> 凡客诚品（北京）科技有限公司</p>
+                        </div>
+                </div>
+                <span class="blank20"></span>
+                <div class="subFooter">
+                        <a class="redLogo" href=""></a>
+                        <span class="costumeOrg" href=""></span>
+                        <a class="wsjyBzzx" href=""></a>
+                        <a class="vanclMsg" href=""></a>
+                        <a class="vanclqingNian" href=""></a>
+
+                        <a href="" style="display: inline-block;">
+                                <img src="images/kexin_brand_for_others.png" alt="" style="width: 120px; height: 39px;">
+                        </a>
+                </div>
+        </div>
+</body>
+
+</html>
