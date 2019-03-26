@@ -127,6 +127,9 @@ ul li {
     cursor: pointer;
     z-index: 10000;
 }
+.vweixinbox:hover .vweixinTip{
+    display: block;
+}
 
 .payattention a.vanclweibo {
     float: left;
