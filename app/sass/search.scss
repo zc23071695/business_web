@@ -88,8 +88,40 @@ $red:#b81c22;
         }
     }
 }
+.content-top{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        div{
+            ul{
+                display: flex;
+                li{
+                    width: 76px;height: 36px;text-align: center;vertical-align: middle;
+                    border: 1px solid $gray;line-height: 36px;
+                }
+            }
+        }
+        div:nth-child(2){
+            width: 76px;height: 36px;text-align: center;vertical-align: middle;
+            border: 1px solid $gray;line-height: 36px;background: $gray;
+        }
+    }
+}
 .content{
-    
+    .container{
+        ul{
+            display: flex;flex-wrap:wrap;justify-content:space-between;
+            li{
+                width: 230px;height: 325px;border: 1px solid $gray;border-bottom: none;
+                p{
+                    text-align: center;
+                    &:nth-child(3){
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

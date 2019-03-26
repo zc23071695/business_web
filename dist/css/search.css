@@ -164,3 +164,38 @@ s, i, em {
     line-height: 30px;
     background: #b81c22;
     color: white; }
+
+.content-top .container {
+  display: flex;
+  justify-content: space-between; }
+  .content-top .container div ul {
+    display: flex; }
+    .content-top .container div ul li {
+      width: 76px;
+      height: 36px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #f7f7f7;
+      line-height: 36px; }
+  .content-top .container div:nth-child(2) {
+    width: 76px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #f7f7f7;
+    line-height: 36px;
+    background: #f7f7f7; }
+
+.content .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .content .container ul li {
+    width: 230px;
+    height: 325px;
+    border: 1px solid #f7f7f7;
+    border-bottom: none; }
+    .content .container ul li p {
+      text-align: center; }
+      .content .container ul li p:nth-child(3) {
+        color: red; }

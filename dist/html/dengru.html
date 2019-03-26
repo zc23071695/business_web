@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/dengru.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="../css/dengru.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <body>
@@ -44,137 +44,116 @@
                     <p class="kuaishu">
                         快速登入
                     </p>
-                    </div>
-                    
-                        <div class="dengru_box">
-                            <form method="GET" class="form_box">
-                                <input type="text" id="form-control" class="fist" name="username" placeholder="请输入用户名"></br>
-                                <p class="yanz"></p>
-                                <input type="password" id="form-control" class="last" name="password"placeholder="请输入密码"></br>
-                                <p class="yanz2"></p>
-                                <button name="submit" type="submit" class="success">确定</button>
-                            </form>
-                        </div>
-                        <div class="kuaishu_dengru">
-                            <form method="GET" class="kuaishu_dengru_box">
-                            <input type="text" class="phone" name="phone" placeholder="请输入手机号">
-                            <input type="text" class="code" placeholder="请输入验证码"><input type="text" class="get_code">
-                            <input type="text" class="phone" name="phone" placeholder="请输入手机号验证码">
-                            <button name="submit" type="submit" class="success">确定</button>
-                            </form>
-                        </div>
-                    <div class="dengru_foot">
-                        <p>
-                            使用合约网站账号登入凡客
-                        </p>
-                        <a href="x"></a>
-                        </div>
+                </div>
+
+                <div class="dengru_box">
+                    <form method="GET" class="form_box">
+                        <input type="text" id="form-control" class="fist" name="username" placeholder="请输入用户名"></br>
+                        <p class="yanz"></p>
+                        <input type="password" id="form-control" class="last" name="password" placeholder="请输入密码"></br>
+                        <p class="yanz2"></p>
+                        <button name="submit" type="submit" class="success">确定</button>
+                    </form>
+                </div>
+                <div class="kuaishu_dengru">
+                    <form method="GET" class="kuaishu_dengru_box">
+                        <input type="text" class="phone" name="phone" placeholder="请输入手机号">
+                        <input type="text" class="code" placeholder="请输入验证码"><input type="text" class="get_code">
+                        <input type="text" class="phone" name="phone" placeholder="请输入手机号验证码">
+                        <button name="submit" type="submit" class="success">确定</button>
+                    </form>
+                </div>
+                <div class="dengru_foot">
+                    <p>
+                        使用合约网站账号登入凡客
+                    </p>
+                    <a href="x"></a>
                 </div>
             </div>
-    <script>
-        var $putpng=document.querySelector('.putpng');//普通登入
-        var $kuaishu=document.querySelector('.kuaishu');//快登入
-        var $dengru_box=document.querySelector('.dengru_box');//普通登入的筐
-        var $kuaishu_dengru=document.querySelector('.kuaishu_dengru');//快速登入筐
-       var $frist=document.querySelector(".fist");
-       var $last=document.querySelector('.last');
-        var $anniu=document.querySelector(".success");
-        var $yanz=document.querySelector('.yanz');
-        var $yanz2=document.querySelector('.yanz2');
-        var $get_code=document.querySelector('.get_code');//获取验证码
-        
-        $putpng.onclick=function(){
-            $putpng.style.background="#b42025";
-            $kuaishu.style.background= "#f5f5f5";
-            $dengru_box.style.display= "block";
-            $kuaishu_dengru.style.display= "none";
-        }
-        $kuaishu.onclick=function(){
-            $putpng.style.background="#f5f5f5";
-            $kuaishu.style.background= "#b42025";
-            $dengru_box.style.display= "none";
-            $kuaishu_dengru.style.display="block";
-        }
+        </div>
+        <script>
+            var $putpng = document.querySelector('.putpng');//普通登入
+            var $kuaishu = document.querySelector('.kuaishu');//快登入
+            var $dengru_box = document.querySelector('.dengru_box');//普通登入的筐
+            var $kuaishu_dengru = document.querySelector('.kuaishu_dengru');//快速登入筐
+            var $frist = document.querySelector(".fist");
+            var $last = document.querySelector('.last');
+            var $anniu = document.querySelector(".success");
+            var $yanz = document.querySelector('.yanz');
+            var $yanz2 = document.querySelector('.yanz2');
+            var $get_code = document.querySelector('.get_code');//获取验证码
+
+            $putpng.onclick = function () {
+                $putpng.style.background = "#b42025";
+                $kuaishu.style.background = "#f5f5f5";
+                $dengru_box.style.display = "block";
+                $kuaishu_dengru.style.display = "none";
+            }
+            $kuaishu.onclick = function () {
+                $putpng.style.background = "#f5f5f5";
+                $kuaishu.style.background = "#b42025";
+                $dengru_box.style.display = "none";
+                $kuaishu_dengru.style.display = "block";
+            }
 
 
 
-        $frist.onblur=function(){
-            console.log(1)
-            var text =this.value;
-            var reg=/^\d{8,16}$/;
-            var $p=this.nextElementSibling;
-            if(reg.test(text)){
-                $yanz.innerHTML="";
-         
+            $frist.onblur = function () {
+                console.log(1)
+                var text = this.value;
+                var reg = /^\d{8,16}$/;
+                var $p = this.nextElementSibling;
+                if (reg.test(text)) {
+                    $yanz.innerHTML = "";
+
+                }
+                else {
+                    $yanz.innerHTML = "不正确";
+
+                }
             }
-            else{
-                $yanz.innerHTML="不正确" ;
-               
+            $last.onblur = function () {
+                var text = this.value;
+                var reg = /^1[556]\d{9}$/;
+                if (reg.test(text)) {
+                    $yanz2.innerHTML = "";
+
+                }
+                else {
+                    $yanz2.innerHTML = "不正确";
+
+                }
             }
-        }
-        $last.onblur=function(){
-            var text =this.value;
-            var reg=/^1[556]\d{9}$/;
-            if(reg.test(text)){
-                $yanz2.innerHTML="";
-               
+            $anniu.onclick = function () {
+                if (($yanz2.innerHTML = "") || ($yanz.innerHTML = "")) {
+                    alert("成功")
+                }
+                else {
+                    $frist.focus;
+                }
             }
-            else{
-                $yanz2.innerHTML="不正确" ;
-           
-            }
-        }
-        $anniu.onclick=function(){
-            if(($yanz2.innerHTML="") ||  ($yanz.innerHTML="")){
-                alert("成功")
-            }
-            else{
-                $frist.focus;
-            }
-        }
-    function lalal(){
-        var shuju1="";
-        for(let i=0;i<5;i++){
-            var str="0123456789abcdefjhijklmopqrstvuwxfz";
-        var num=Math.floor(Math.random()*36);
-     
-            var shuju=str.charAt(num);
-          
-            shuju1+=shuju;
-        }
-       
-        
-        $get_code.value=shuju1
-    }
-    $get_code.value="esqmn"
-        $get_code.onclick=function(){
-            lalal();
-        }
-        
+            function lalal() {
+                var shuju1 = "";
+                for (let i = 0; i < 5; i++) {
+                    var str = "0123456789abcdefjhijklmopqrstvuwxfz";
+                    var num = Math.floor(Math.random() * 36);
+
+                    var shuju = str.charAt(num);
+
+                    shuju1 += shuju;
+                }
 
 
-    </script>
+                $get_code.value = shuju1
+            }
+            $get_code.value = "esqmn"
+            $get_code.onclick = function () {
+                lalal();
+            }
+
+
+
+        </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
