@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/zhanshi.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+    <div class="breadnav">
+        <a href="X">首页 ></a>
+        <a href="X">男装 ></a>
+        <a href="X">T恤 ></a>
+        <a href="X">短袖T恤 ></a>
+        <a href="X">T恤 广本 平头白发</a>
+    </div>
+
+    <h2 class="danpinTitleTab "> T恤 山鸟叔 重庆森林 华灰色</h2>
+    <div id="mian">
+        <div class="left_tupian">
+
+            <div class="tupian_top">
+                <img src="images/zhanshi_03.jpg">
+                <!-- 第一张展示的图片 -->
+            </div>
+            <div class="tupian_foot">
+                <img src="images/zhanshi_08.jpg">
+                <!-- 第二张展示的图片 -->
+            </div>
+        </div>
+        <div class="fangdaj">
+            <div class="zhanshi">
+                <img src="images/zhanshi_05.jpg" class="la">
+                <span class="xiaofangkuai"></span>
+            </div>
+            <div class="fangdatupian">
+                <img src="images/zhanshi_05.jpg" class="datupian">
+            </div>
+        </div>
+        <div class="mian_right">
+            <p>
+                特惠价 ：￥<span>98.00</span>充一百换一百，点击充值
+            </p>
+            <div class="selcolor">
+                颜色：<img src="images/ttt_03.jpg" name="花灰色">
+                <img src="images/ttt_05.jpg" name="白色">
+
+            </div>
+            <div class="selsize">
+                尺码：
+                <ul class="lalaa">
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                    <li>XXL</li>                   
+                </ul>
+            </div>
+            <div class="selsum">
+                数量:<select class="xuansum">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    </select>
+                    
+            </div>
+            <div class="seledate">
+                已选：<span class="xuyao_color">花灰色</span><span class="xuyao_size"></span><p>现在有货</p>
+            </div>
+            <div class="shoppingnew">
+                <a href="x" class="select_shop">立即购买</a>
+                <a href="x" class="add_shop">加入购物车</a>
+            </div>
+            <div class="tishi">
+                <span></span>优惠提示<span></span>
+             </div>
+             <div class="zhenche">
+             <p>
+                 <span>包邮</span>全场购物满199元免邮
+             </p>
+             <p>
+                    <span>多买优惠</span>面三免一
+                </p>
+                </div>
+        </div>
+    </div>
+
+<script>
+    var $zhanshi=document.querySelector('.zhanshi');//获取展示框
+    var $zhsnshitupian=document.querySelector('.la')//获取展示图片
+    var $xiaofangkuai=document.querySelector('.xiaofangkuai')//获取小化快
+    var $fangdatupian=document.querySelector('.fangdatupian')//获取放大的之后的图片的筐
+    var $datupian=document.querySelector('.datupian')//获取放大之后的图片
+    var $la=document.querySelector('.la');
+    var $mian=document.querySelector('#mian')
+    var $tupian_top=document.querySelector('.tupian_top')//获取中图片第一张的盒子
+    var $tupian_foot=document.querySelector('.tupian_foot')//获取中第二张图片的盒子
+    var $left_tupian=document.querySelector('.left_tupian')
+    $tupian_top.onclick=function(){
+  
+        this.style. borderColor= "#a10000";
+        $datupian.src="images/zhanshi_05.jpg";
+        $la.src="images/zhanshi_05.jpg";
+    }
+    $tupian_foot.onclick=function(){
+        $datupian.style.src="";
+        this.style.borderColor= "#a10000"; 
+       
+        $datupian.src="images/qq_03.jpg";
+        $la.src="images/qq_03.jpg";
+    }
+    $zhanshi.onmouseenter = function (e) {
+        $xiaofangkuai.style.display = 'block';
+        $fangdatupian.style.display = 'block';
+          // 获取鼠标位置
+        }
+
+        $zhanshi.onmousemove = function (e) {
+          e = e || window.event;
+          let X = e.clientX -$zhanshi.offsetLeft -$mian.offsetLeft- $xiaofangkuai.offsetWidth/2;
+          console.log($mian.offsetLeft)
+   
+          let Y = e.clientY-$zhanshi.offsetTop -$mian.offsetTop- $xiaofangkuai.offsetHeight/2;
+ 
+          let maxX = $fangdatupian.clientWidth - $xiaofangkuai.offsetWidth,
+            maxY =$fangdatupian.clientHeight - $xiaofangkuai.offsetHeight;
+          // 判断合法性
+          if (X < 0) {
+            X = 0;
+          } else if (X > maxX) {
+            X = maxX;
+          }
+          if (Y < 0) {
+            Y = 0
+          } else if (Y > maxY) {
+            Y = maxY;
+          }
+          $xiaofangkuai.style.left = X + 'px';
+          $xiaofangkuai.style.top = Y + 'px';
+          $datupian.style.left = -2 * X + 'px';
+          $datupian.style.top = -2 * Y + 'px';
+
+        }
+        $zhanshi.onmouseleave = function () {
+            $xiaofangkuai.style.display = 'none';
+        $fangdatupian.style.display = 'none';
+        }
+        var $selcolor=document.querySelector('.selcolor');//获取盒子
+        var $allimg=$selcolor.children;
+        var $lalaa=document.querySelector('.lalaa');//获取下面的盒子
+        var $allsize=$lalaa.children;//获取所有的尺码
+        var $xuyao_color=document.querySelector(".xuyao_color");//需要颜色
+        var $xuyao_size=document.querySelector('.xuyao_size');           
+        $selcolor.onclick=function(e){
+            e = e || window.event;
+            var target=e.target ||e.srcElement;
+           
+            if(target.nodeName=="IMG"){
+                for(let i=0;i<$allimg.length;i++){
+                    $allimg[i].style.borderColor="#000";
+                   
+                }
+                    target.style.borderColor=" #a10000";
+                    $xuyao_color.value= target.name;
+                    $xuyao_color.innerHTML=target.name;
+            }
+        }
+        $lalaa.onclick=function(e){
+            e = e || window.event;
+            var target=e.target ||e.srcElement;
+           
+            if(target.nodeName=="LI"){
+                for(let i=0;i<$allsize.length;i++){
+                    $allsize[i].style.borderColor="#000";
+                   
+
+                }
+                    target.style.borderColor=" #a10000";
+                    var size=target.innerHTML;
+                   
+                    $xuyao_size.innerHTML=target.innerHTML;
+                    
+            }
+        }
+</script>
+
+<div class="ares1">
+    <h3>
+        详情图片
+    </h3>
+    <p>
+        注：商品实际的颜色以静态为主
+    </p>
+    <div class="daitepiture">
+        <img src="images/images/qq_0111_03.jpg">
+    </div>
+</div>
+<div class="zhanshitupian">
+    <img src="images/02.jpg">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+</body>
+
+</html>
