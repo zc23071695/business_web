@@ -1,64 +1,146 @@
+var shopCart = (function () {
+    var $box, shopData;
+    return {
+        init: function ($el) {
+			$box = $($el);
+			this.__setData()
+            this.getCarData();
+            this.event();
+           
+        },
+        event: function () {
+            var _this = this;
+            $box.on('click','.shop-btn-del',function() {
+                var self = $(this);
+                // 获取点击按钮的索引
+                var index = self.index('.shop-btn-del');
+                shopData.splice(index, 1);
+                // 删除对应dom, 重新渲染
+                _this.insertData(shopData);
+                // 修改本地数据
+                _this.setCarData();
 
-	new Vue({
-		el : "#test",
-		data : {
-			productList:[
-				{
-					'proName' :'T恤 欧飞鸿 英雌 黑色',
-					'proNum' : 1,
-					'proPrice' :98,
-				},
-				{
-					'proName' :'T恤 欧飞鸿 英雌 白色',
-					'proNum' : 1,
-					'proPrice' :98,
-				},
-				{
-					'proName' :'小T恤 欧飞鸿 英雌 彩色',
-					'proNum' : 1,
-					'proPrice' :98,
-				}
-			],
+            })
+            $box.on('change', '.shop-count', function() {
+                var val = $(this).val() - 0;
+                var index =  $(this).index('.shop-count');
+                shopData[index].count = val;
+                // 更新总价, 从新渲染数据
+                _this.insertData(shopData);
+                // 更新本地数据
+                _this.setCarData();
+            })
 		},
-		methods:{
-			selectProduct:function(_isSelect){
-                //遍历productList，全部取反
-                for (var i = 0, len = this.productList.length; i < len; i++) {
-                    this.productList[i].isSelect = !_isSelect;
-                }
-            },
-			deletePro : function(index){
-				alert("你正在删除"+this.productList[index].proName);
-				this.productList.splice(index,1);
+		__setData() {
+			var data =  [
+				   {
+            "id": 1,
+            "name": "T恤 欧飞鸿 英雌 黑色",
+            "size":"L",
+            "price": 98,
+            "count": 1,
+            "discount": "-",
+            "subtotal": 98,
+            "operation": "删除"
+        },
+      
+			
 				
+			]
+			localStorage.shopList = JSON.stringify(data);
+		},
+        // 获取商品数据
+        getCarData() {
+			
+			
+		// ]`;
+			var data = JSON.parse(localStorage.shopList || '[]')
+		   this.insertData(data);
+		  
 
-			},
-			//删除已经选中(isSelect=true)的产品
-            deleteProduct:function () {
-                this.productList=this.productList.filter(function (item) {return !item.isSelect})
-            },
+        },
+        // 添加到购物车的数据
+        setCarData() {
+            localStorage.shopList = JSON.stringify(shopData);
 		},
-		computed:{
-			//检测是否全选
-            isSelectAll:function(){
-                //如果productList中每一条数据的isSelect都为true，返回true，否则返回false;
-                return this.productList.every(function (val) { return val.isSelect});
-            },
-			getTotal:function(){
-				var prolist = this.productList.filter(function (val) { return val.isSelect}),
-				totalPri = 0;
-				for (var i = 0,len = prolist.length; i < len; i++) {
-					totalPri+=prolist[i].proPrice*prolist[i].proNum;
-				}
-				return {totalNum:prolist.length,totalPrice:totalPri}
-			},
-		},
-		mounted:function () {
-        var _this=this;
-        //为productList添加select（是否选中）字段，初始值为true
-        this.productList.map(function (item) {
-            _this.$set(item, 'isSelect', true);
-        })
-        }
-        
-	})
+		
+        insertData(data) {
+            $box.html('');
+			shopData = data;	
+			// localStorage.shopList = JSON.stringify(shopData);
+            if(data.length == 0){	
+                
+                var shopNone = `
+				<div id="cart-gift">
+				<div id="cart">
+				</div>
+					<div id="cart-empty">
+						您的购物车中没有商品，请您先 <a href="index1.html">选购商品»</a></div>	 
+				</div>
+                `
+                $box.append(shopNone);
+            }else{
+				var count=0;
+				data.forEach(x => {
+					count++;
+					var htmlTemplate = `
+					<div id="test">
+					<table id="mytable" cellspacing="0">
+						<tr class="target">
+							<th><input type="checkBox" class="allpick"  />全选</th>
+							<th class="image"> </th>
+							<th class="product">商品</th>
+							<th class="size">尺寸</th>
+							<th class="price">单价</th>
+							<th class="count">数量</th>
+							<th class="discount">优惠</th>
+							<th class="subtotal">小计</th>
+							<th class="operate">操作</th>
+						</tr>
+						<tr>
+							<td><input type="checkBox"  ></td>
+							<td><img src="images/6380951-1j201903071600005973.jpg" alt=""></td>
+							<td>${x.name}</td>
+							<td>L</td>
+							<td>${x.price}</td>
+							<td><span><a href="#" ">-</a></span><strong>${x.count}</strong><span><a href="#" >+</a></span></td>
+							<td>-</td>
+							<td>${x.price*x.count}</td>
+							<td><a  class = "shop-btn-del">删除</a></td>
+						</tr>
+					</table>
+					<div class="checkPro">
+						<div class="leftContent">
+								<input type="checkBox" class="allpick"   />全选
+							&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="#" >删除</a></span>
+							
+						</div>
+						<div class="rightContent">
+							<span>产品金额件总计（不含运费）： </span><p>￥${x.subtotal}</p>
+						</div>
+						
+					</div>
+				</div>
+					`;
+					if(count==1){
+						$box.append(htmlTemplate);
+					}else{
+						$(".target").after(`<tr>
+						<td><input type="checkBox"  ></td>
+						<td><img src="images/6380951-1j201903071600005973.jpg" alt=""></td>
+						<td>${x.name}</td>
+						<td>L</td>
+						<td>${x.price}</td>
+						<td><span><a href="#" ">-</a></span><strong>${x.count}</strong><span><a href="#" >+</a></span></td>
+						<td>-</td>
+						<td>${x.price*x.count}</td>
+						<td><a  class = "shop-btn-del">删除</a></td>
+					</tr>`);
+					}
+					
+				})
+			}
+        },
+       
+    }
+}())

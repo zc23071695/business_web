@@ -135,6 +135,18 @@ table th {
 .bd-right {
     border-right: 1px solid #DCDFE4;
 }
+#cart-empty, .cart-loading {
+    color: Gray;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+#cart-empty a {
+    color: #A10000;
+    text-decoration: underline;
+}
 #test{
     width: 1200px;
 }

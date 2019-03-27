@@ -32,65 +32,15 @@
 
         </div>
         <div id="content">
-
-
-
-
-            <div id="cart-gift">
-
-
-                <div class="cart-top">
-                    <!-- 2015.07.31 shopping改版 -->
-
-                    <h2>
-                        我的购物车</h2>
-                </div>
-                <div class="tip">
-                    <span>温馨提示：</span>1.选购清单中的商品无法保留库存，请您及时结算。2.商品的价格和库存将以订单提交时为准。3.促销活动满减优惠将均摊至商品小计中。
-                </div>
                
-                            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-                            <div id="test">
-                                <table id="mytable" cellspacing="0">
-                                    <tr>
-                                        <th><input type="checkBox" class="allpick"  @click="selectProduct(isSelectAll)" v-bind:checked="isSelectAll" />全选</th>
-                                        <th class="image"> </th>
-                                        <th class="product">商品</th>
-                                        <th class="size">尺寸</th>
-                                        <th class="price">单价</th>
-                                        <th class="count">数量</th>
-                                        <th class="discount">优惠</th>
-                                        <th class="subtotal">小计</th>
-                                        <th class="operate">操作</th>
-                                    </tr>
-                                    <tr v-for="(item,index) in productList">
-                                        <td><input type="checkBox"   v-bind:checked="item.isSelect" @click="item.isSelect=!item.isSelect"/></td>
-                                        <td><img src="images/6380951-1j201903071600005973.jpg" alt=""></td>
-                                        <td>{{item.proName}}</td>
-                                        <td>L</td>
-                                        <td>{{item.proPrice}}</td>
-                                        <td><span><a href="#" @click="item.proNum>0?item.proNum--:''">-</a></span><strong>{{item.proNum}}</strong><span><a href="#" @click="item.proNum++">+</a></span></td>
-                                        <td>-</td>
-                                        <td>{{item.proPrice*item.proNum}}</td>
-                                        <td><a href="#" @click="deletePro(index)">删除</a></td>
-                                    </tr>
-                                </table>
-                                <div class="checkPro">
-                                    <div class="leftContent">
-                                            <input type="checkBox" class="allpick"  @click="selectProduct(isSelectAll)" v-bind:checked="isSelectAll" />全选
-                                        &nbsp;&nbsp;&nbsp;&nbsp;<span><a href="#" @click="deleteProduct">删除</a></span>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;<em>数量总计: {{getTotal.totalNum}}件</em>
-                                    </div>
-                                    <div class="rightContent">
-                                        <span>产品金额件总计（不含运费）： </span><p>￥{{getTotal.totalPrice}}</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
+
+        
+                
+                          
 
                 
-            </div>
+          
            
           
 
@@ -119,8 +69,9 @@
    
     
     <script src="js/shopCart.js"></script>
+    <script src="js/ajax2.0.0.js"></script>
     <script>
-        shopCart.init("#supplier-general-product_tb");
+        shopCart.init("#content");
     
     </script>
 </body>
