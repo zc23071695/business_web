@@ -218,7 +218,17 @@ ul li {
     z-index: 10;
     float: right;
 }
-
+.searchTab  .active:hover{
+    border: 1px solid #c1383e;
+    border-bottom: 1px solid #ffffff;
+    background: url(../images/vanclsprite.png) no-repeat scroll -153px -29px;
+    width: 105px;
+    height: 27px;
+    
+    position: relative;
+    z-index: 1001;
+    float: right;
+}
 .searchTab .active p a {
     display: block;
     padding-left: 39px;
@@ -226,8 +236,24 @@ ul li {
     font-size: 12px;
     color: #ffffff;
 }
-.searchTab .active p a:hover .BuycarTab{
+
+.searchTab .active a.cartab {
     display: block;
+    padding-left: 29px;
+    padding-top: 6px;
+    font-size: 12px;
+    color: #ffffff;
+}
+.searchTab .active:hover a.cartab {
+    display: block;
+    padding-left: 29px;
+    padding-top: 6px;
+    font-size: 12px;
+    color: red;
+}
+.searchTab   .active:hover .BuycarTab {
+    display: block;
+    
 }
 .BuycarTab {
     width: 315px;
