@@ -40,8 +40,9 @@
                                                 <div class="loginArea">
                                                         您好,<span class="top">欢迎光临凡客诚品！ </span>
                                                         <span>
-                                                                <a href="html/dengru.html">登录</a>&nbsp;|&nbsp;<a
-                                                                        href="html/zhuche.html">注册</a>
+                                                                <a href="html/dengru.html"
+                                                                        class="login1">登录</a>&nbsp;|&nbsp;<a
+                                                                        href="html/zhuche.html" class="register1">注册</a>
                                                         </span>
                                                 </div>
                                                 <div class="recommendArea">
@@ -721,7 +722,11 @@
         <script src="js/index.js"></script>
         <script src="js/001cookie.js"></script>
         <script>
-                console.log(cookie.get("username"), cookie.get("password"));
+                if (cookie.get("username")) {
+                        $(".login1").html(`您好 ${cookie.get("username")}`);
+                        $(".register1").html(`退出登录`);
+                }
+                // console.log(cookie.get("username"));
         </script>
 </body>
 
