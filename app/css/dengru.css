@@ -153,6 +153,11 @@ font-size: 14px;
     height: 45px;
     width: 100px;
     border: 1px solid #444444;
+    color: #b42025;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+
 }
 .kuaishu_dengru input{
     margin: 10px 0 0 20px;

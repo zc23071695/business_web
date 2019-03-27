@@ -30,28 +30,29 @@
         <div class="mian_dengru">
             <p class="mian_dengru_top">
                 <span>注册新用户</span>
-                <span>我已经注册啦账户，现在<a href="x">登录</a></span>
+                <span>我已经注册啦账户，现在<a href="dengru.html">登录</a></span>
             </p>
-            <form class="form-box" autocomplete="on">
+            <form class="form_box" autocomplete="on" onsubmit="return false">
                 <div class="form-group">
-
-                    <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名"
+                        <label for="email">用户名</label>
+                    <input type="text" class="form-control usern" id="username" name="username" placeholder="请输入用户名"
                         data-error="需要输入6-13位的字母或者下划线">
-                    <p class=""></p>
+                    <p class="panduan"></p>
                 </div>
                 <div class="form-group">
-
+                        <label for="email">手机号</label>
                     <input required type="text" class="form-control" id="phone" name="phone" placeholder="请输入手机号"
                         data-error="手机号格式不正确">
                     <p class=""></p>
                 </div>
                 <div class="form-group">
+                        <label for="email">输入密码</label>
                     <input placeholder="" type="password" class="form-control" id="password" name="password"
-                        placeholder="请设置密码">
+                    placeholder="请重新输入密码">
                     <p class=""></p>
                 </div>
                 <div class="form-group">
-
+                        <label for="email">再次输入密码</label>
                     <input type="password" class="form-control" name="repassword" id="repassword" placeholder="请重新输入密码"
                         data-error="两次密码输入不一致">
                     <p class=""></p>
@@ -65,15 +66,17 @@
     <script src="../js/api.js"></script>
     <script src="../js/001cookie.js"></script>
     <script>
+        var $form=document.querySelector('.form_box');
         var $anniu = document.querySelector(".btn-success");
-
+        var $panduan=document.querySelector(".panduan")
         var $allinput = document.querySelectorAll("input");
         $allinput[0].onblur = function () {
             var text = this.value;
+             younamen=text ;
+            console.log(younamen);
             var reg = /^\d{8,16}$/;
             var $p = this.nextElementSibling;
-            console.dir(this)
-            console.log($p)
+            
             // if(text===""){
             //    $p.innerHTML="内容不可以为空" ;
 
@@ -89,7 +92,8 @@
         }
         $allinput[1].onblur = function () {
             var text = this.value;
-            var reg = /^1[556]\d{9}$/;
+            
+            var reg = /^1[34578]\d{9}$/;
             var $p = this.nextElementSibling;
             // if(text===""){
             //     $p.innerHTML="内容不可以为空" ;
@@ -100,13 +104,15 @@
                 $p.className = "success"
             }
             else {
-                $p.innerHTML = "请输入正确用户名";
+                $p.innerHTML = "请输入正确的手机号码";
                 $p.className = "fail"
             }
         }
         $allinput[2].onblur = function () {
             var text = this.value;
-            var reg = /^\d{8,16}/;
+             youpossword= text;
+            
+            var reg = /^\w{4,16}/;
             var $p = this.nextElementSibling;
             // if(text===""){
             //    $p.innerHTML="内容不可以为空" ;
@@ -117,14 +123,14 @@
                 $p.className = "success";
             }
             else {
-                $p.innerHTML = "请输入正确用户名";
+                $p.innerHTML = "请输入正确密码";
                 $p.className = "fail"
             }
             $allinput[3].focus();
         }
         $allinput[3].onblur = function () {
             var text = this.value;
-
+            var youragainpossword=text;
             var $p = this.nextElementSibling;
             // if(text===""){
             //     $p.innerHTML="内容不可以为空" ;
@@ -138,8 +144,50 @@
                 $p.className = "fail"
             }
         }
+
+
+        
+        $(".usern").change(function(){
+            let val=this.value;
+            let obj = {  "username": val
+                };
+
+            sendAjax(apio.check_username, {
+                method: 'POST',
+                data: obj
+            })
+                .then(data => {
+                    if(data.code===200){
+                        
+                        $panduan.innerHTML="用户名已经存在";
+                        $allinput[0].focus();
+                    
+                     }
+                     else{
+                      
+                        $panduan.innerHTML="用户名可以用"
+                     }
+
+                });
+        });
+        
         $anniu.onclick = function () {
-            var obj = { "username": "qwer", "password": "123" };
+            for (let i = 0; i < $allinput.length; i++) {
+                $allinput[i].focus();
+                var p = $allinput[i].nextElementSibling;
+
+                if ($allinput[i].value === "") {
+                    p.innerHTML = "内容不可以为空";
+                }
+                if (p.className != "success") {
+                    $allinput[i].focus;
+                
+                }
+
+            }
+           
+            var obj = {  username: $form['username'].value,
+                password: $form['password'].value};
 
             sendAjax(apio.register, {
                 method: 'POST',
@@ -149,22 +197,18 @@
                     cookie.set("username", obj.username);
                     cookie.set("password", obj.password);
                     console.log(data);
+                    if(data.code===200){
+                         alert("登入成功");
+                         location.href="dengru.html";
+                     }
+                     else{
+                         alert("由于网络原因")
+                     }
 
                 });
-            // for (let i = 0; i < $allinput.length; i++) {
-            //     $allinput[i].focus();
-            //     var p = $allinput[i].nextElementSibling;
+           
+           
 
-            //     if ($allinput[i].value === "") {
-            //         p.innerHTML = "内容不可以为空";
-            //     }
-            //     if (p.className != "success") {
-            //         $allinput[i].focus;
-            //         return false;
-            //     }
-
-            // }
-            // alert("验证成功")
         }
     </script>
 </body>

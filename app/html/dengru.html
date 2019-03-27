@@ -33,7 +33,7 @@
                 </p>
                 <p>
                     没有账号免费
-                    <a href="x">注册</a>
+                    <a href="zhuche.html">注册</a>
                 </p>
             </div>
             <div class="dengru">
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="dengru_box">
-                    <form method="GET" class="form_box">
+                    <form  class="form_box" onsubmit="return false">
                         <input type="text" id="form-control" class="fist" name="username" placeholder="请输入用户名"></br>
                         <p class="yanz"></p>
                         <input type="password" id="form-control" class="last" name="password" placeholder="请输入密码"></br>
@@ -71,6 +71,10 @@
                 </div>
             </div>
         </div>
+        <script src="../js/ajax3.0.0.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/001cookie.js"></script>
         <script>
             var $putpng = document.querySelector('.putpng');//普通登入
             var $kuaishu = document.querySelector('.kuaishu');//快登入
@@ -99,7 +103,7 @@
 
 
             $frist.onblur = function () {
-                console.log(1)
+                
                 var text = this.value;
                 var reg = /^\d{8,16}$/;
                 var $p = this.nextElementSibling;
@@ -114,7 +118,7 @@
             }
             $last.onblur = function () {
                 var text = this.value;
-                var reg = /^1[556]\d{9}$/;
+                var reg =  /^\w{4,16}/;
                 if (reg.test(text)) {
                     $yanz2.innerHTML = "";
 
@@ -150,6 +154,45 @@
             $get_code.onclick = function () {
                 lalal();
             }
+
+
+
+
+
+
+
+
+
+
+            $anniu.onclick = function () {
+           
+           var obj = {  username: $frist .value,
+               password: $last.value};
+
+           sendAjax(apio.login, {
+               method: 'POST',
+               data: obj
+           })
+               .then(data => {
+                   cookie.set("username", obj.username);
+                   cookie.set("password", obj.password);
+                   console.log(data);
+                     if(data.code===200){
+                         alert("登入成功");
+                         location.href="../index1.html";
+                     }
+                     else{
+                         alert("由于网络原因")
+                     }
+               });
+
+            }
+
+
+
+
+
+            
 
 
 
