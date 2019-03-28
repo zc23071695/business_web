@@ -34,56 +34,49 @@
   left: 236px;
   width: 412px;
   height: 300px; }
+  .mian_left p {
+    color: #444444;
+    font-size: 16px;
+    line-height: 80px;
+    padding-left: 88px; }
+    .mian_left p span {
+      line-height: 80px;
+      color: #c02b2f;
+      font-size: 16px; }
 
 .tupian {
   height: 244px;
   width: 412px;
   background: url(../images/xiangmu_07.jpg) no-repeat; }
 
-.mian_left p {
-  color: #444444;
-  font-size: 16px;
-  line-height: 80px;
-  padding-left: 88px; }
-
-.mian_left p span {
-  line-height: 80px;
-  color: #c02b2f;
-  font-size: 16px; }
-
 .mian_dengru {
   width: 400px;
   height: 474px;
   position: absolute;
   top: 30px;
-  right: 114px; }
+  right: 114px;
+  position: absolute;
+  top: 40px;
+  right: 90px;
+  width: 414px; }
 
 .mian_top {
   height: 63px;
   display: flex;
   justify-content: space-between; }
-
-.mian_top:nth-child(1) {
-  height: 63px;
-  line-height: 63px;
-  font-size: 22px;
-  font-weight: 10000;
-  color: #979797; }
-
-.mian_top p:nth-child(2) {
-  height: 63px;
-  line-height: 63px;
-  font-size: 14px;
-  color: #979797; }
-
-.mian_top p:nth-child(2) a {
-  color: #ce6025; }
-
-.mian_dengru {
-  position: absolute;
-  top: 40px;
-  right: 90px;
-  width: 414px; }
+  .mian_top:nth-child(1) {
+    height: 63px;
+    line-height: 63px;
+    font-size: 22px;
+    font-weight: 10000;
+    color: #979797; }
+  .mian_top p:nth-child(2) {
+    height: 63px;
+    line-height: 63px;
+    font-size: 14px;
+    color: #979797; }
+    .mian_top p:nth-child(2) a {
+      color: #ce6025; }
 
 .mian_dengru_top {
   width: 414px;
@@ -92,9 +85,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #b81e20; }
-
-.mian_dengru_top span:nth-child(1) {
-  font-size: 22px; }
-
-.mian_dengru_top span:nth-child(2) a {
-  color: #b52024; }
+  .mian_dengru_top span:nth-child(1) {
+    font-size: 22px; }
+  .mian_dengru_top span:nth-child(2) a {
+    color: #b52024; }

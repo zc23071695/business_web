@@ -14,6 +14,11 @@ em, strong, th, h1, h2, h3, h4, h5, h6 {
 
 a {
   cursor: pointer; }
+  a.logo {
+    float: left;
+    display: block;
+    height: 39px;
+    width: 311px; }
 
 a:link, a:visited {
   text-decoration: none;
@@ -27,7 +32,7 @@ img {
   width: 980px; }
 
 #header {
-  border-bottom: 1px solid #7A7F89;
+  border-bottom: 1px solid #7a7f89;
   padding-top: 15px; }
 
 .clearfix:after {
@@ -35,13 +40,12 @@ img {
   display: block;
   visibility: hidden;
   height: 0;
-  clear: both; }
-
-a.logo {
-  float: left;
+  clear: both;
+  content: ".";
   display: block;
-  height: 39px;
-  width: 311px; }
+  visibility: hidden;
+  height: 0;
+  clear: both; }
 
 .help-center, .account {
   float: right;
@@ -61,22 +65,20 @@ a.logo {
   height: 28px;
   width: 540px;
   margin-top: 10px; }
-
-#location em {
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 28px;
-  text-align: center;
-  width: 170px; }
-
-#location span {
-  color: #666;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 28px;
-  text-align: center;
-  width: 170px; }
+  #location em {
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    width: 170px; }
+  #location span {
+    color: #666;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    width: 170px; }
 
 #content {
   margin-top: 10px; }
@@ -88,30 +90,21 @@ a.logo {
   width: 935px;
   background: url(../images/newpromotion.gif) no-repeat;
   background-position: -460px 0; }
-
-.cart-top h2 {
-  float: left;
-  font-size: 18px;
-  font-weight: bold;
-  font: normal 20px Microsoft Yahei, Microsoft JHenghei, SimHei; }
+  .cart-top h2 {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    font: normal 20px Microsoft Yahei, Microsoft JHenghei, SimHei; }
 
 .tip {
   margin-top: 6px;
   color: #656565;
   line-height: 20px; }
-
-.tip span {
-  color: #a10000; }
+  .tip span {
+    color: #a10000; }
 
 #cart-product {
   margin-top: 10px; }
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  visibility: hidden;
-  height: 0;
-  clear: both; }
 
 table th, table td {
   text-align: center;
@@ -125,12 +118,11 @@ td, th {
 
 table {
   border-collapse: separate; }
-
-table th {
-  height: 37px; }
+  table th {
+    height: 37px; }
 
 .bd-right {
-  border-right: 1px solid #DCDFE4; }
+  border-right: 1px solid #dcdfe4; }
 
 #cart-empty, .cart-loading {
   color: Gray;
@@ -141,7 +133,7 @@ table th {
   text-align: center; }
 
 #cart-empty a {
-  color: #A10000;
+  color: #a10000;
   text-decoration: underline; }
 
 #test {
@@ -176,9 +168,8 @@ table th {
 
 .checkPro {
   width: 1200px; }
-
-.checkPro .leftContent {
-  height: 50px; }
+  .checkPro .leftContent {
+    height: 50px; }
 
 .leftContent input {
   display: inline; }
@@ -193,25 +184,22 @@ table th {
 
 .rightContent {
   height: 60px; }
-
-.rightContent span {
-  padding-left: 20px;
-  float: left;
-  padding-top: 16px; }
-
-.rightContent p {
-  float: left;
-  font-size: 30px;
-  color: red; }
+  .rightContent span {
+    padding-left: 20px;
+    float: left;
+    padding-top: 16px; }
+  .rightContent p {
+    float: left;
+    font-size: 30px;
+    color: red; }
 
 #footer {
   color: #999;
   padding: 10px 0;
   text-align: center;
   margin-bottom: 20px; }
-
-#footer p {
-  margin-bottom: 20px; }
+  #footer p {
+    margin-bottom: 20px; }
 
 .ectrustprc, .costumeorg, .online315 {
   display: inline-block;
