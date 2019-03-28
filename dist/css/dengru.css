@@ -34,22 +34,20 @@
   left: 236px;
   width: 412px;
   height: 300px; }
+  .mian_left p {
+    color: #444444;
+    font-size: 16px;
+    line-height: 80px;
+    padding-left: 88px; }
+    .mian_left p span {
+      line-height: 80px;
+      color: #c02b2f;
+      font-size: 16px; }
 
 .tupian {
   height: 244px;
   width: 412px;
   background: url(../images/xiangmu_07.jpg) no-repeat; }
-
-.mian_left p {
-  color: #444444;
-  font-size: 16px;
-  line-height: 80px;
-  padding-left: 88px; }
-
-.mian_left p span {
-  line-height: 80px;
-  color: #c02b2f;
-  font-size: 16px; }
 
 .mian_dengru {
   width: 400px;
@@ -62,22 +60,19 @@
   height: 63px;
   display: flex;
   justify-content: space-between; }
-
-.mian_top:nth-child(1) {
-  height: 63px;
-  line-height: 63px;
-  font-size: 22px;
-  font-weight: 10000;
-  color: #979797; }
-
-.mian_top p:nth-child(2) {
-  height: 63px;
-  line-height: 63px;
-  font-size: 14px;
-  color: #979797; }
-
-.mian_top p:nth-child(2) a {
-  color: #ce6025; }
+  .mian_top:nth-child(1) {
+    height: 63px;
+    line-height: 63px;
+    font-size: 22px;
+    font-weight: 10000;
+    color: #979797; }
+  .mian_top p:nth-child(2) {
+    height: 63px;
+    line-height: 63px;
+    font-size: 14px;
+    color: #979797; }
+    .mian_top p:nth-child(2) a {
+      color: #ce6025; }
 
 .dengru {
   width: 400px;
@@ -89,21 +84,18 @@
   height: 63px;
   width: 400px;
   display: flex; }
-
-.dengru_top p {
-  width: 50%;
-  height: 63px;
-  line-height: 63px;
-  text-align: center;
-  font-size: 14px; }
-
-.dengru_top p:nth-child(1) {
-  background: #b42025;
-  color: #ffffff; }
-
-.dengru_top p:nth-child(2) {
-  background: #f5f5f5;
-  color: #000; }
+  .dengru_top p {
+    width: 50%;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+    font-size: 14px; }
+    .dengru_top p:nth-child(1) {
+      background: #b42025;
+      color: #ffffff; }
+    .dengru_top p:nth-child(2) {
+      background: #f5f5f5;
+      color: #000; }
 
 .dengru_box {
   width: 398px;
@@ -132,6 +124,8 @@
   top: 69px;
   left: 0px;
   display: none; }
+  .kuaishu_dengru input {
+    margin: 10px 0 0 20px; }
 
 .phone {
   width: 360px;
@@ -152,9 +146,6 @@
   font-size: 20px;
   font-style: italic; }
 
-.kuaishu_dengru input {
-  margin: 10px 0 0 20px; }
-
 .dengru_foot {
   width: 398px;
   height: 96px;
@@ -162,14 +153,12 @@
   border-top: 1px dotted #909090;
   padding: 22px 0 0 20px;
   box-sizing: border-box; }
-
-.dengru_foot p {
-  font-size: 14px;
-  color: #a4a4a4; }
-
-.dengru_foot a {
-  display: block;
-  height: 34px;
-  width: 204px;
-  background: url(../images/xiangmu_11.jpg);
-  margin-top: 10px; }
+  .dengru_foot p {
+    font-size: 14px;
+    color: #a4a4a4; }
+  .dengru_foot a {
+    display: block;
+    height: 34px;
+    width: 204px;
+    background: url(../images/xiangmu_11.jpg);
+    margin-top: 10px; }

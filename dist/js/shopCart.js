@@ -76,7 +76,7 @@ var shopCart = (function () {
 				<div id="cart">
 				</div>
 					<div id="cart-empty">
-						您的购物车中没有商品，请您先 <a href="index1.html">选购商品»</a></div>	 
+						您的购物车中没有商品，请您先 <a href="../index.html">选购商品»</a></div>	 
 				</div>
                 `
 				$box.append(shopNone);
