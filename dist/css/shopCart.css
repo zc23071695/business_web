@@ -1,241 +1,230 @@
+@charset "UTF-8";
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font: 12px Arial,Helvetica,sans-serif,宋体;
-    width: 100%;
-    color: #333;
-}
-em, strong, th, h1, h2, h3, h4, h5, h6 {
-    font-style: normal;
-    font-weight: bold;
-}
-a {
-    cursor: pointer;
-}
-a:link, a:visited {
-    text-decoration: none;
-    color: #333;
-}
-img {
-    border: none;
-}
-#wrapper {
-    margin: 0 auto;
-    width: 980px;
-}
-#header {
-    border-bottom: 1px solid #7A7F89;
-    padding-top: 15px;
-}
-.clearfix:after {
-    content: ".";
-    display: block;
-    visibility: hidden;
-    height: 0;
-    clear: both;
-}
-a.logo {
-    float: left;
-    display: block;
-    height: 39px;
-    width: 311px;
-}
-.help-center, .account {
-    float: right;
-    line-height: 39px;
-}
-.account {
-    margin-right: 40px;
-    color: #666
-}
-.account a, a.login {
-    color: #a10000;
-    padding: 0 5px;
-}
-#location {
-    background: url(../images/newProm.gif);
-    background-position: 0 0;
-    height: 28px;
-    width: 540px;
-    margin-top: 10px;
-}
-#location em {
-    color: #fff;
-    display: inline-block;
-    font-weight: bold;
-    line-height: 28px;
-    text-align: center;
-    width: 170px;
-}
-#location span {
-    color: #666;
-    display: inline-block;
-    font-weight: bold;
-    line-height: 28px;
-    text-align: center;
-    width: 170px;
-}
-#content {
-    margin-top: 10px;
-}
-.cart-top {
-    height: 30px;
-    overflow: hidden;
-    padding-left: 45px;
-    width: 935px;
-    
-    background: url(../images/newpromotion.gif) no-repeat ;
-    background-position: -460px 0;
-}
-.cart-top h2 {
-    float: left;
-    font-size: 18px;
-    font-weight: bold;
-    font: normal 20px Microsoft Yahei, Microsoft JHenghei, SimHei;
-}
-.tip {
-    margin-top: 6px;
-    color: #656565;
-    line-height: 20px;
-}
-.tip span {
-    color: #a10000;
-}
-#cart-product {
-    margin-top: 10px;
-}
-.clearfix:after {
-    content: ".";
-    display: block;
-    visibility: hidden;
-    height: 0;
-    clear: both;
-}
-table th, table td {
-    text-align: center;
-    vertical-align: middle;
-}
-th {
-    background: url(../images/carthd.png) repeat-x;
-}
-td, th {
-    display: table-cell;
-    
-}
-table {
-    border-collapse: separate;
-}
-table th {
-    height: 37px;
-}
+  margin: 0;
+  padding: 0; }
 
+body {
+  font: 12px Arial,Helvetica,sans-serif,宋体;
+  width: 100%;
+  color: #333; }
+
+em, strong, th, h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-weight: bold; }
+
+a {
+  cursor: pointer; }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #333; }
+
+img {
+  border: none; }
+
+#wrapper {
+  margin: 0 auto;
+  width: 980px; }
+
+#header {
+  border-bottom: 1px solid #7A7F89;
+  padding-top: 15px; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both; }
+
+a.logo {
+  float: left;
+  display: block;
+  height: 39px;
+  width: 311px; }
+
+.help-center, .account {
+  float: right;
+  line-height: 39px; }
+
+.account {
+  margin-right: 40px;
+  color: #666; }
+
+.account a, a.login {
+  color: #a10000;
+  padding: 0 5px; }
+
+#location {
+  background: url(../images/newProm.gif);
+  background-position: 0 0;
+  height: 28px;
+  width: 540px;
+  margin-top: 10px; }
+
+#location em {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  width: 170px; }
+
+#location span {
+  color: #666;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  width: 170px; }
+
+#content {
+  margin-top: 10px; }
+
+.cart-top {
+  height: 30px;
+  overflow: hidden;
+  padding-left: 45px;
+  width: 935px;
+  background: url(../images/newpromotion.gif) no-repeat;
+  background-position: -460px 0; }
+
+.cart-top h2 {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  font: normal 20px Microsoft Yahei, Microsoft JHenghei, SimHei; }
+
+.tip {
+  margin-top: 6px;
+  color: #656565;
+  line-height: 20px; }
+
+.tip span {
+  color: #a10000; }
+
+#cart-product {
+  margin-top: 10px; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both; }
+
+table th, table td {
+  text-align: center;
+  vertical-align: middle; }
+
+th {
+  background: url(../images/carthd.png) repeat-x; }
+
+td, th {
+  display: table-cell; }
+
+table {
+  border-collapse: separate; }
+
+table th {
+  height: 37px; }
 
 .bd-right {
-    border-right: 1px solid #DCDFE4;
-}
+  border-right: 1px solid #DCDFE4; }
+
 #cart-empty, .cart-loading {
-    color: Gray;
-    font-size: 14px;
-    font-weight: bold;
-    height: 50px;
-    margin-top: 50px;
-    text-align: center;
-}
+  color: Gray;
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 50px;
+  text-align: center; }
+
 #cart-empty a {
-    color: #A10000;
-    text-decoration: underline;
-}
-#test{
-    width: 1200px;
-}
-.allpick{
-    width: 96px;
-}
+  color: #A10000;
+  text-decoration: underline; }
 
-.image{
-width: 50px;
-}
-.size{
-    width: 80px;
-}
-.product{
-width: 311px;
-}
-.count{
-width: 100px;
-}
-.price{
-width: 80px;
-}
-.discount{
-width: 60px;
-}
-.subtotal{
-width: 109px;
-}
-.operate{
-width: 78px;
-}
-.checkPro{
-    width: 1200px;
+#test {
+  width: 1200px; }
 
-}
-.checkPro .leftContent{
-   height: 50px;
-}
-.leftContent input{
-    display: inline
-}
-.leftContent span{
-    width: 30px;
-    margin-left: 30px;
-}
-.leftContent em{
-   
-    width: 30px;
-    margin-left: 30px;
-}
+.allpick {
+  width: 96px; }
 
-.rightContent{
-    height: 60px;
-}
-.rightContent span{
-    padding-left: 20px;
-    float: left;
-    padding-top: 16px;
-    
-}
-.rightContent  p{
-    float: left;
-    font-size: 30px;
-    color: red;
-}
+.image {
+  width: 50px; }
 
+.size {
+  width: 80px; }
+
+.product {
+  width: 311px; }
+
+.count {
+  width: 100px; }
+
+.price {
+  width: 80px; }
+
+.discount {
+  width: 60px; }
+
+.subtotal {
+  width: 109px; }
+
+.operate {
+  width: 78px; }
+
+.checkPro {
+  width: 1200px; }
+
+.checkPro .leftContent {
+  height: 50px; }
+
+.leftContent input {
+  display: inline; }
+
+.leftContent span {
+  width: 30px;
+  margin-left: 30px; }
+
+.leftContent em {
+  width: 30px;
+  margin-left: 30px; }
+
+.rightContent {
+  height: 60px; }
+
+.rightContent span {
+  padding-left: 20px;
+  float: left;
+  padding-top: 16px; }
+
+.rightContent p {
+  float: left;
+  font-size: 30px;
+  color: red; }
 
 #footer {
-    color: #999;
-    padding: 10px 0;
-    text-align: center;
-    margin-bottom: 20px;
-}
+  color: #999;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px; }
+
 #footer p {
-    margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
+
 .ectrustprc, .costumeorg, .online315 {
-    display: inline-block;
-    margin-right: 20px;
-}
+  display: inline-block;
+  margin-right: 20px; }
+
 .ectrustprc {
-    width: 156px;
-    height: 46px;
-}
+  width: 156px;
+  height: 46px; }
+
 .costumeorg {
-    width: 156px;
-    height: 45px;
-}
+  width: 156px;
+  height: 45px; }
+
 .online315 {
-    width: 96px;
-    height: 42px;
-}
+  width: 96px;
+  height: 42px; }

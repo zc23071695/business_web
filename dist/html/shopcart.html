@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shopCart.css">
+</head>
+
+<body class="mycart">
+    <div id="wrapper">
+        <div id="header" class="clearfix">
+            <a class="logo" href="http://www.vancl.com/" title="凡客诚品" target="_blank">
+                <img alt="凡客诚品" src="http://i2.vanclimg.com/cms/20140829/vancl-logo.png">
+            </a>
+            <div class="help-center">
+                <a href="http://help.vancl.com/" target="_blank">帮助中心</a>
+            </div>
+            <div class="account">
+                <p>您好，欢迎光临凡客诚品。<a class="login"
+                        href="https://login.vancl.com/login/login.aspx?http://shopping.vancl.com/mycart">登录</a>|<a
+                        class="reg" href="https://login.vancl.com/login/reg.aspx">注册</a></p>
+
+            </div>
+        </div>
+        <div id="location">
+
+
+            <em>1.我的购物车</em> <span>2.填写核对信息单</span> <span>3.成功提交订单</span>
+
+        </div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div id="footer">
+            <p class="copyrights">Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号
+                出版物经营许可证新出发京批字第直110138号</p>
+            <p class="certs">
+                <a class="ectrustprc" title="中国电子商务诚信单位" href="http://www.ectrustprc.org.cn/seal/splash/1000020.htm"
+                    target="_blank">
+                    <img alt="中国电子商务诚信单位" src="../images/cert-redlogo.gif">
+                </a>
+                <span class="costumeorg" title="中国服装协会会员单位">
+                    <img alt="中国服装协会会员单位" src="../images/cert-costumeorg.gif">
+                </span>
+                <a class="online315" href="http://www.315online.com.cn/member/315090053.html" title="网上交易保障中心"
+                    target="_blank">
+                    <img alt="网上交易保障中心" src="../images/cert-wsjybzzx.gif">
+                </a>
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+
+
+    <script src="../js/shopCart.js"></script>
+
+    <script>
+        shopCart.init("#content");
+        $("#content").on("click", ".increase", function () {
+            console.log(111);
+            let index = $(this).attr("index");
+            let shop_data = JSON.parse(localStorage.shopList);
+            shop_data[index].count++;
+            localStorage.shopList = JSON.stringify(shop_data);
+            shopCart.init("#content");
+        });
+        $("#content").on("click", ".decrease", function () {
+            console.log(111);
+            let index = $(this).attr("index");
+
+            let shop_data = JSON.parse(localStorage.shopList);
+
+            if (shop_data[index].count != 0) {
+                shop_data[index].count--;
+            };
+            localStorage.shopList = JSON.stringify(shop_data);
+            shopCart.init("#content");
+        });
+    </script>
+</body>
+
+</html>

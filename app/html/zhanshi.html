@@ -9,368 +9,238 @@
     <link rel="stylesheet" href="../css/zhanshi.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/index.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
 
 </head>
 <style>
-        .swiper-container {
-                margin: 0 auto;
-                width: 1200px;
-                height: 535px;
-        }
+    .swiper-container {
+        margin: 0 auto;
+        width: 1200px;
+        height: 535px;
+    }
 </style>
 
 <body class="full">
-        <div id="Head" class="vanclHead">
-                <div id="headerTopArea" class="headerTopAreaBox">
-                        <div class="headerTopArea">
-                                <div class="headerTop">
-                                        <div class="headerTopRight" style="width: 126px;">
-                                                <div class="active notice" id="vanclCustomer"><a class="mapDropTitle"
-                                                                href="javascript:void(0);"
-                                                                >网站公告</a></div>
-                                                <div class="payattention"><em></em><a href="javascript:void(0);"
-                                                                class="vweixinbox"><span class="vweixin"
-                                                                        style="background: url(images/w1.jpg) no-repeat left 3px;"></span><b
-                                                                        class="vweixinTip"></b></a><a
-                                                                href="javascript:void(0);" class="track vanclweibo"
-                                                                name="hp-hp-head-weibo-v:n"  
-                                                                style="background: url(images/w2.jpg) no-repeat left 3px;"></a>
-                                                </div>
-                                        </div>
-                                        <div class="headerTopLeft">
-                                                <div class="loginArea">
-                                                        您好,<span class="top">欢迎光临凡客诚品！ </span>
-                                                        <span>
-                                                                <a href="html/dengru.html">登录</a>&nbsp;|&nbsp;<a href="html/zhuche.html">注册</a>
-                                                        </span>
-                                                </div>
-                                                <div class="recommendArea">
-                                                        <a href="shopcart.html">我的订单</a>
-                                                </div>
-                                        </div>
-                                </div>
+    <div id="Head" class="vanclHead">
+        <div id="headerTopArea" class="headerTopAreaBox">
+            <div class="headerTopArea">
+                <div class="headerTop">
+                    <div class="headerTopRight" style="width: 126px;">
+                        <div class="active notice" id="vanclCustomer"><a class="mapDropTitle"
+                                href="javascript:void(0);">网站公告</a></div>
+                        <div class="payattention"><em></em><a href="javascript:void(0);" class="vweixinbox"><span
+                                    class="vweixin" style="background: url(images/w1.jpg) no-repeat left 3px;"></span><b
+                                    class="vweixinTip"></b></a><a href="javascript:void(0);" class="track vanclweibo"
+                                name="hp-hp-head-weibo-v:n"
+                                style="background: url(images/w2.jpg) no-repeat left 3px;"></a>
                         </div>
+                    </div>
+                    <div class="headerTopLeft">
+                        <div class="loginArea">
+                            您好,<span class="top">欢迎光临凡客诚品！ </span>
+                            <span>
+                                <a href="html/dengru.html">登录</a>&nbsp;|&nbsp;<a href="html/zhuche.html">注册</a>
+                            </span>
+                        </div>
+                        <div class="recommendArea">
+                            <a href="shopcart.html">我的订单</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </div>
-        <!--顶部通栏广告位-->
-        <div id="logoArea" class="vanclLogoSearch">
-                <div class="vanclSearch fr">
-                        <div class="searchTab">
-                                <div class="search fl"><input type="text" class="searchText ac_input textBox Enter fl"
-                                                name="k" id="skey" value="搜“运动户外”，体验与众不同" defaultkey="运动户外"
-                                                autocomplete="off">
-                                        <ul class="show"></ul>
+    </div>
+    <!--顶部通栏广告位-->
+    <div id="logoArea" class="vanclLogoSearch">
+        <div class="vanclSearch fr">
+            <div class="searchTab">
+                <div class="search fl"><input type="text" class="searchText ac_input textBox Enter fl" name="k"
+                        id="skey" value="搜“运动户外”，体验与众不同" defaultkey="运动户外" autocomplete="off">
+                    <ul class="show"></ul>
 
-                                        <input type="button" class="searchBtn sousuoBtn btn" id="btnHeaderSearch"
-                                                onfocus="this.blur()">
-                                </div>
-                                <div class="active" id="shoppingCarNone">
-                                        <p><a id="shoppingcar_link" rel="nofollow" href="shopcart.html"
-                                                        name="hp-hp-head-cart-v:n:t"
-                                                        class="shopborder track cartab">购物车(<span
-                                                                car_product_total="shoppingCar_product_totalcount">0</span>)</a><s></s>
-                                        </p>
-                                        <div class="bottomlines"></div>
-                                        <div class="BuycarTab shopDropList">
-                                                <div class="shopnopru">
-                                                        <div class="SCtotalpageno">您的购物车中没有任何商品</div>
-                                                        <div class="SCtotalpageBottom"></div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <script src="../js/jsonp.js"></script>
-                        <script src="../js/search.js"></script>
-                        <div class="hotWord">
-                                <p> 热门搜索：<a name="hp-hp-classhotsearch-1_1-v:n" class="track"
-                                                href="html/zhanshi.html"
-                                                 >免烫衬衫</a><a name="hp-hp-classhotsearch-1_2-v:n"
-                                                class="track"
-                                                href="html/zhanshi.html"
-                                                 >羽绒服</a><a name="hp-hp-classhotsearch-1_3-v:n"
-                                                class="track"
-                                                href="html/zhanshi.html"
-                                                 >外套</a><a name="hp-hp-classhotsearch-1_4-v:n"
-                                                class="track"
-                                                href="html/zhanshi.html"
-                                                 >熊本熊</a><a name="hp-hp-classhotsearch-1_5-v:n"
-                                                class="track"
-                                                href="html/zhanshi.html"
-                                                 >运动户外</a><a name="hp-hp-classhotsearch-1_6-v:n"
-                                                class="track"
-                                                href="html/zhanshi.html"
-                                                 >帆布鞋</a><a name="hp-hp-classhotsearch-1_7-v:n"
-                                                class="track"
-                                                href="html/zhanshi.html"
-                                                 >水柔棉</a></p>
-                        </div>
+                    <input type="button" class="searchBtn sousuoBtn btn" id="btnHeaderSearch" onfocus="this.blur()">
                 </div>
+                <div class="active" id="shoppingCarNone">
+                    <p><a id="shoppingcar_link" rel="nofollow" href="shopcart.html" name="hp-hp-head-cart-v:n:t"
+                            class="shopborder track cartab">购物车(<span
+                                car_product_total="shoppingCar_product_totalcount">0</span>)</a><s></s>
+                    </p>
+                    <div class="bottomlines"></div>
+                    <div class="BuycarTab shopDropList">
+                        <div class="shopnopru">
+                            <div class="SCtotalpageno">您的购物车中没有任何商品</div>
+                            <div class="SCtotalpageBottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../js/jsonp.js"></script>
+            <script src="../js/search.js"></script>
+            <div class="hotWord">
+                <p> 热门搜索：<a name="hp-hp-classhotsearch-1_1-v:n" class="track" href="html/zhanshi.html">免烫衬衫</a><a
+                        name="hp-hp-classhotsearch-1_2-v:n" class="track" href="html/zhanshi.html">羽绒服</a><a
+                        name="hp-hp-classhotsearch-1_3-v:n" class="track" href="html/zhanshi.html">外套</a><a
+                        name="hp-hp-classhotsearch-1_4-v:n" class="track" href="html/zhanshi.html">熊本熊</a><a
+                        name="hp-hp-classhotsearch-1_5-v:n" class="track" href="html/zhanshi.html">运动户外</a><a
+                        name="hp-hp-classhotsearch-1_6-v:n" class="track" href="html/zhanshi.html">帆布鞋</a><a
+                        name="hp-hp-classhotsearch-1_7-v:n" class="track" href="html/zhanshi.html">水柔棉</a></p>
+            </div>
         </div>
+    </div>
 
-        <div class="navlist clear" id="mainNavBox" style="z-index:300!important;">
-                <ul>
-                        <li class="vancllogo_Con" style="text-align: left;"><a href="index1.html"></a></li>
-                        <li><a href="index1.html">首页</a><span class="NavLine"></span></li>
-                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-v:n"
-                                         >衬衫<em
-                                                style="display:block;width:25px; height:13px; background:url(images/icon_hot.png) no-repeat scroll; position:absolute;left:67px;top:-5px;"></em></a><span
-                                        class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                        <ul>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-1-v:n"
-                                                                 >免烫</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-2-v:n"
-                                                                 >易打理</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-3-v:n"
-                                                                 >休闲</a></li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_1-4-v:n"  >高支</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-5-v:n"
-                                                                 >法兰绒</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-6-v:n"
-                                                                 >牛津纺</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-7-v:n"
-                                                                 >青年布</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-8-v:n"
-                                                                 >牛仔</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-9-v:n"
-                                                                 >麻</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-10-v:n"
-                                                                 >水洗棉</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_1-11-v:n"
-                                                                 >泡泡纱</a></li>
-                                        </ul>
-                                </div>
+    <div class="navlist clear" id="mainNavBox" style="z-index:300!important;">
+        <ul>
+            <li class="vancllogo_Con" style="text-align: left;"><a href="index.html"></a></li>
+            <li><a href="index.html">首页</a><span class="NavLine"></span></li>
+            <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-v:n">衬衫<em
+                        style="display:block;width:25px; height:13px; background:url(images/icon_hot.png) no-repeat scroll; position:absolute;left:67px;top:-5px;"></em></a><span
+                    class="NavLine"></span>
+                <div class="subNav"><span></span>
+                    <ul>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-1-v:n">免烫</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-2-v:n">易打理</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-3-v:n">休闲</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-4-v:n">高支</a>
                         </li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-5-v:n">法兰绒</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-6-v:n">牛津纺</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-7-v:n">青年布</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-8-v:n">牛仔</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-9-v:n">麻</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-10-v:n">水洗棉</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_1-11-v:n">泡泡纱</a></li>
+                    </ul>
+                </div>
+            </li>
 
-                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-v:n"  >T恤<em
-                                                style="display:block;width:25px; height:13px; background:url(images/new_0308.png) no-repeat scroll; position:absolute;left:62px;top:-5px;"></em></a><span
-                                        class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                        <ul>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_2-1-v:n"
-                                                                 >本广</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_2-2-v:n"
-                                                                 >李翔伟</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_2-3-v:n"
-                                                                 >张广先</a></li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_2-4-v:n"  >药</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_2-5-v:n"
-                                                                 >长场雄</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_2-6-v:n"
-                                                                 >创可贴</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                name="hp-hp-head-nav_2-7-v:n"  >周南</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_2-8-v:n"  >山鸟叔</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_2-9-v:n"  >简鱼</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_2-10-v:n"  >欧飞鸿</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_2-11-v:n"
-                                                                 >好小猪</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_2-12-v:n"
-                                                                 >剪纸猪</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_2-13-v:n"
-                                                                 >赵老师的猪</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                name="hp-hp-head-nav_2-14-v:n"  >熊本熊</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                name="hp-hp-head-nav_2-15-v:n"  >水柔棉T</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                name="hp-hp-head-nav_2-16-v:n"  >运动T恤</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                name="hp-hp-head-nav_2-17-v:n"  >POLO</a>
-                                                </li>
-                                        </ul>
-                                </div>
+            <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-v:n">T恤<em
+                        style="display:block;width:25px; height:13px; background:url(images/new_0308.png) no-repeat scroll; position:absolute;left:62px;top:-5px;"></em></a><span
+                    class="NavLine"></span>
+                <div class="subNav"><span></span>
+                    <ul>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-1-v:n">本广</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-2-v:n">李翔伟</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-3-v:n">张广先</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-4-v:n">药</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-5-v:n">长场雄</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-6-v:n">创可贴</a></li>
+                        <li><a href="html/zhanshi.html" name="hp-hp-head-nav_2-7-v:n">周南</a>
                         </li>
-                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_4-v:n"
-                                         >卫衣</a><span class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                        <ul>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_4-1-v:n"
-                                                                 >熊本熊</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_4-2-v:n"
-                                                                 >开衫</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_4-3-v:n"
-                                                                 >连帽</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_4-4-v:n"
-                                                                 >圆领</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_4-5-v:n"
-                                                                 >水柔棉</a></li>
-                                        </ul>
-                                </div>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-8-v:n">山鸟叔</a>
                         </li>
-                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-v:n"
-                                         >外套</a><span class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                        <ul>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_5-1-v:n"  >运动户外</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_5-2-v:n"
-                                                                 >皮肤衣</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_5-3-v:n"
-                                                                 >西服</a></li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_5-4-v:n"  >C9设计款</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_5-5-v:n"
-                                                                 >夹克</a></li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_5-6-v:n"
-                                                                 >nautilus</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_5-7-v:n"
-                                                                 >大衣</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_5-8-v:n"
-                                                                 >羽绒服</a></li>
-                                        </ul>
-                                </div>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-9-v:n">简鱼</a>
                         </li>
-                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_6-v:n"
-                                         >针织衫</a><span class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                        <ul>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_6-1-v:n"
-                                                                 >空调衫</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_6-2-v:n"
-                                                                 >棉线衫</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_6-3-v:n"
-                                                                 >羊毛衫</a></li>
-                                        </ul>
-                                </div>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-10-v:n">欧飞鸿</a>
                         </li>
-                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_7-v:n"
-                                         >裤装</a><span class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                        <ul>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_7-2-v:n"
-                                                                 >针织裤</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_7-1-v:n"
-                                                                 >休闲裤</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_7-3-v:n"
-                                                                 >牛仔裤</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_7-4-v:n"
-                                                                 >运动裤</a></li>
-                                        </ul>
-                                </div>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-11-v:n">好小猪</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-12-v:n">剪纸猪</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_2-13-v:n">赵老师的猪</a></li>
+                        <li><a href="html/zhanshi.html" name="hp-hp-head-nav_2-14-v:n">熊本熊</a>
                         </li>
-                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_8-v:n"
-                                         >鞋</a><span class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                        <ul>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_8-1-v:n"
-                                                                 >复古跑鞋</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_8-2-v:n"
-                                                                 >帆布鞋</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_8-3-v:n"
-                                                                 >休闲鞋</a></li>
-                                        </ul>
-                                </div>
+                        <li><a href="html/zhanshi.html" name="hp-hp-head-nav_2-15-v:n">水柔棉T</a>
                         </li>
-                        <li class="none"><a href="//home.vancl.com/" class="track" name="hp-hp-head-nav_9-v:n"
-                                         >家居配饰</a><span class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                        <ul>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_9-1-v:n"
-                                                                 >手机壳</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_9-2-v:n"
-                                                                 >床品套件</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                name="hp-hp-head-nav_9-3-v:n"  >被子</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_9-4-v:n"  >枕</a></li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_9-5-v:n"  >家居服</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_9-6-v:n"
-                                                                 >家居鞋</a></li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_9-7-v:n"  >背提包</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_9-8-v:n"
-                                                                 >拉杆箱</a></li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_9-9-v:n"  >皮带钱包</a>
-                                                </li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_9-10-v:n"
-                                                                 >帽子</a></li>
-                                                <li><a href="html/zhanshi.html"
-                                                                class="track" name="hp-hp-head-nav_9-11-v:n"
-                                                                 >毛巾</a></li>
-                                                <li><a href="html/zhanshi.html" class="track"
-                                                                name="hp-hp-head-nav_9-12-v:n"  >内衣袜品</a>
-                                                </li>
-                                        </ul>
-                                </div>
+                        <li><a href="html/zhanshi.html" name="hp-hp-head-nav_2-16-v:n">运动T恤</a>
                         </li>
-                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_3-v:n"
-                                         >特惠</a><span class="NavLine"></span>
-                                <div class="subNav"><span></span>
-                                </div>
+                        <li><a href="html/zhanshi.html" name="hp-hp-head-nav_2-17-v:n">POLO</a>
                         </li>
-                </ul>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="../js/index.js">
-            </script>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_4-v:n">卫衣</a><span
+                    class="NavLine"></span>
+                <div class="subNav"><span></span>
+                    <ul>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_4-1-v:n">熊本熊</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_4-2-v:n">开衫</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_4-3-v:n">连帽</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_4-4-v:n">圆领</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_4-5-v:n">水柔棉</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-v:n">外套</a><span
+                    class="NavLine"></span>
+                <div class="subNav"><span></span>
+                    <ul>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-1-v:n">运动户外</a>
+                        </li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-2-v:n">皮肤衣</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-3-v:n">西服</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-4-v:n">C9设计款</a>
+                        </li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-5-v:n">夹克</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-6-v:n">nautilus</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-7-v:n">大衣</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_5-8-v:n">羽绒服</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_6-v:n">针织衫</a><span
+                    class="NavLine"></span>
+                <div class="subNav"><span></span>
+                    <ul>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_6-1-v:n">空调衫</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_6-2-v:n">棉线衫</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_6-3-v:n">羊毛衫</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_7-v:n">裤装</a><span
+                    class="NavLine"></span>
+                <div class="subNav"><span></span>
+                    <ul>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_7-2-v:n">针织裤</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_7-1-v:n">休闲裤</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_7-3-v:n">牛仔裤</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_7-4-v:n">运动裤</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_8-v:n">鞋</a><span class="NavLine"></span>
+                <div class="subNav"><span></span>
+                    <ul>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_8-1-v:n">复古跑鞋</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_8-2-v:n">帆布鞋</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_8-3-v:n">休闲鞋</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="none"><a href="//home.vancl.com/" class="track" name="hp-hp-head-nav_9-v:n">家居配饰</a><span
+                    class="NavLine"></span>
+                <div class="subNav"><span></span>
+                    <ul>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-1-v:n">手机壳</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-2-v:n">床品套件</a></li>
+                        <li><a href="html/zhanshi.html" name="hp-hp-head-nav_9-3-v:n">被子</a>
+                        </li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-4-v:n">枕</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-5-v:n">家居服</a>
+                        </li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-6-v:n">家居鞋</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-7-v:n">背提包</a>
+                        </li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-8-v:n">拉杆箱</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-9-v:n">皮带钱包</a>
+                        </li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-10-v:n">帽子</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-11-v:n">毛巾</a></li>
+                        <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_9-12-v:n">内衣袜品</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="html/zhanshi.html" class="track" name="hp-hp-head-nav_3-v:n">特惠</a><span
+                    class="NavLine"></span>
+                <div class="subNav"><span></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/index.js">
+    </script>
     <div class="breadnav">
-        <a href="../index1.html">首页 ></a>
+        <a href="../index.html">首页 ></a>
         <a href="#">男装 ></a>
         <a href="#">T恤 ></a>
         <a href="#">短袖T恤 ></a>
@@ -433,8 +303,8 @@
                 <p>现在有货</p>
             </div>
             <div class="shoppingnew">
-                <a href="../shopcart.html" class="select_shop">立即购买</a>
-                <a href="../shopcart.html" class="add_shop">加入购物车</a>
+                <a href="#" class="select_shop add1">立即购买</a>
+                <a href="#" class="add_shop add1">加入购物车</a>
             </div>
             <div class="tishi">
                 <span></span>优惠提示<span></span>
@@ -449,12 +319,12 @@
             </div>
         </div>
     </div>
-    
 
 
 
 
-    
+
+
     <script>
         var $zhanshi = document.querySelector('.zhanshi');//获取展示框
         var $zhsnshitupian = document.querySelector('.la')//获取展示图片
@@ -488,10 +358,10 @@
         $zhanshi.onmousemove = function (e) {
             e = e || window.event;
             let X = e.pageX - $zhanshi.offsetLeft - $mian.offsetLeft - $xiaofangkuai.offsetWidth / 2;
-         
 
-            let Y = e.pageY - $zhanshi.offsetTop- $mian.offsetTop - $xiaofangkuai.offsetHeight / 2;
-            
+
+            let Y = e.pageY - $zhanshi.offsetTop - $mian.offsetTop - $xiaofangkuai.offsetHeight / 2;
+
             let maxX = $fangdatupian.clientWidth - $xiaofangkuai.offsetWidth,
                 maxY = $fangdatupian.clientHeight - $xiaofangkuai.offsetHeight;
             // 判断合法性
@@ -571,28 +441,69 @@
 
 
     <div id="footArea">
-            <div class="footBottom">
-                    <div class="footBottomTab">
-                            <p> Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号
-                                    京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+        <div class="footBottom">
+            <div class="footBottomTab">
+                <p> Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号
+                    京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
 
-                            <p> 凡客诚品（北京）科技有限公司</p>
-                    </div>
+                <p> 凡客诚品（北京）科技有限公司</p>
             </div>
-            <span class="blank20"></span>
-            <div class="subFooter">
-                    <a class="redLogo" href=""></a>
-                    <span class="costumeOrg" href=""></span>
-                    <a class="wsjyBzzx" href=""></a>
-                    <a class="vanclMsg" href=""></a>
-                    <a class="vanclqingNian" href=""></a>
+        </div>
+        <span class="blank20"></span>
+        <div class="subFooter">
+            <a class="redLogo" href=""></a>
+            <span class="costumeOrg" href=""></span>
+            <a class="wsjyBzzx" href=""></a>
+            <a class="vanclMsg" href=""></a>
+            <a class="vanclqingNian" href=""></a>
 
-                    <a href="" style="display: inline-block;">
-                            <img src="images/kexin_brand_for_others.png" alt="" style="width: 120px; height: 39px;">
-                    </a>
-            </div>
+            <a href="" style="display: inline-block;">
+                <img src="images/kexin_brand_for_others.png" alt="" style="width: 120px; height: 39px;">
+            </a>
+        </div>
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">提交成功</h4>
+                </div>
+                <div class="modal-body">
+                    购物车添加成功
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary b-commit" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(".add1").click(function () {
+            if (!localStorage.shopList) {
+                localStorage.shopList = "[]";
+            };
+            let shop_data = JSON.parse(localStorage.shopList);
+            let x = {
+                "id": 1,
+                "name": "T恤 欧飞鸿 英雌 黑色",
+                "size": "L",
+                "price": 98,
+                "count": 1,
+                "discount": "-",
+                "subtotal": 98,
+                "operation": "删除"
+            };
+            shop_data.push(x);
+            localStorage.shopList = JSON.stringify(shop_data);
+            $('#myModal').modal('show');
+        })
+    </script>
 
 
 
