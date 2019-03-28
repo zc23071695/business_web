@@ -433,8 +433,8 @@
                 <p>现在有货</p>
             </div>
             <div class="shoppingnew">
-                <a href="x" class="select_shop">立即购买</a>
-                <a href="x" class="add_shop">加入购物车</a>
+                <a href="../shopcart.html" class="select_shop">立即购买</a>
+                <a href="../shopcart.html" class="add_shop">加入购物车</a>
             </div>
             <div class="tishi">
                 <span></span>优惠提示<span></span>
@@ -449,7 +449,12 @@
             </div>
         </div>
     </div>
+    
 
+
+
+
+    
     <script>
         var $zhanshi = document.querySelector('.zhanshi');//获取展示框
         var $zhsnshitupian = document.querySelector('.la')//获取展示图片
@@ -482,11 +487,11 @@
 
         $zhanshi.onmousemove = function (e) {
             e = e || window.event;
-            let X = e.clientX - $zhanshi.offsetLeft - $mian.offsetLeft - $xiaofangkuai.offsetWidth / 2;
-            console.log($mian.offsetLeft)
+            let X = e.pageX - $zhanshi.offsetLeft - $mian.offsetLeft - $xiaofangkuai.offsetWidth / 2;
+         
 
-            let Y = e.clientY - $zhanshi.offsetTop - $mian.offsetTop - $xiaofangkuai.offsetHeight / 2;
-
+            let Y = e.pageY - $zhanshi.offsetTop- $mian.offsetTop - $xiaofangkuai.offsetHeight / 2;
+            
             let maxX = $fangdatupian.clientWidth - $xiaofangkuai.offsetWidth,
                 maxY = $fangdatupian.clientHeight - $xiaofangkuai.offsetHeight;
             // 判断合法性
@@ -565,7 +570,28 @@
     </div>
 
 
+    <div id="footArea">
+            <div class="footBottom">
+                    <div class="footBottomTab">
+                            <p> Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号
+                                    京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
 
+                            <p> 凡客诚品（北京）科技有限公司</p>
+                    </div>
+            </div>
+            <span class="blank20"></span>
+            <div class="subFooter">
+                    <a class="redLogo" href=""></a>
+                    <span class="costumeOrg" href=""></span>
+                    <a class="wsjyBzzx" href=""></a>
+                    <a class="vanclMsg" href=""></a>
+                    <a class="vanclqingNian" href=""></a>
+
+                    <a href="" style="display: inline-block;">
+                            <img src="images/kexin_brand_for_others.png" alt="" style="width: 120px; height: 39px;">
+                    </a>
+            </div>
+    </div>
 
 
 
